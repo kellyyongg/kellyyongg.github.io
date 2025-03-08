@@ -10,10 +10,12 @@
             align-items: center;
             background-color: white;
             padding: 10px 20px;
+            border: 1px solid black;
         }
 
         .logo-container {
             display: flex;
+            font-weight: 1000;
         }
 
         .nav-container {
@@ -62,6 +64,25 @@
             text-decoration: underline;
             text-underline-offset: 10px;
         }
+
+        .button-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .button-container button {
+            background-color: purple;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .button-container .contact:hover {
+            text-decoration: underline;
+            text-underline-offset: 10px;
+        }
     </style>
 </head>
 
@@ -76,7 +97,13 @@
             <div class="client">Clients</div>
             <div class="contact">Contact</div>
         </div>
+        <div>
+            <div class="button-container">
+                <button class="call">Call Now</button>
+            </div>
+        </div>
     </header>
+
 </body>
 
 </html>
