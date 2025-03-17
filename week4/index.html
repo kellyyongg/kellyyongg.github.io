@@ -2,9 +2,24 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
-    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>index</title>
+
+    <style> 
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Crimson Text', serif;
+        }
+        p {
+            font-family: 'Work Sans', sans-serif;
+        }
+
         #container {
+            background-color:#74c69d;
             max-width: 1280px;
             margin: auto;
         }
@@ -12,23 +27,76 @@
         #nav {
             display: flex;
             justify-content: space-between;
+            align-items: center; 
+            padding: 20px;
 
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width:200px;
+            margin-right: 10px;
+        }
+
+        .menu {
+        font-family: 'Work Sans', sans-serif;
+        display: flex;
+        gap: 20px;
+        color: white;
+        font-size: 16px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
         }
 
         #banner {
             display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 0;
 
         }
 
         #banner-text {
             width: 45%;
-            background-color: red;
+            padding: 20px;
+        }
+
+        #banner-text h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        #banner-text h5 {
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #555;
+        }
+
+        #banner-text p {
+            padding: 10px 20px;
+            border: none;
+            background-color: #F8B400;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
         }
 
         #banner-image {
-            width: 55%;
-            background-color: blue;
+            width: 55%; 
         }
+
+        #banner-image img {
+            width: 100%;
+        }
+
     </style>
 
 </head>
@@ -36,12 +104,20 @@
 <body>
     <div id="container">
         <div id="nav">
-
-            <div>Logo</div>
-            <div>Menu</div>
+            <div class="logo"><img src="img/logo.png">
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
         </div>
         <div id="banner">
-            <div id="banner-text">Banner Text</div>
+            <h5>WELCOME</h5>
+            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+            <button>Explore</button>
             <div id="banner-image"><img src="img/happyteam.png" width="100%"></div>
         </div>
     </div>
