@@ -73,6 +73,13 @@
             text-decoration: none;
         }
 
+        .portfolio h3 {
+            color: #74c69d;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
         .portfolio {
             text-align: center;
             padding: 50px 0;
@@ -106,6 +113,46 @@
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .dark-button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 40px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 16px;
+        }
+
+        .footer {
+            background-color: #74c69d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 50px;
+            color: white;
+            font-size: 14px;
+        }
+
+        .footer .social-icons {
+            display: flex;
+            gap: 15px;
+            padding-left: 70px;
+            padding-right: 70px
+        }
+
+        .footer .copyright {
+            text-align: right;
+            padding-left: 70px;
+            padding-right: 70px
+        }
     </style>
 </head>
 
@@ -121,6 +168,7 @@
             </div>
         </div>
         <section class="portfolio">
+            <h3>Works</h3>
             <h2>Portfolio</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
@@ -134,8 +182,24 @@
                 <div class="portfolio-item"><img src="img/7.svg"></div>
                 <div class="portfolio-item"><img src="img/8.png"></div>
             </div>
-
-
+            <div class="button-container">
+                <button class="dark-button">Learn More</button>
+            </div>
+        </section>
+        <div class="footer">
+            <div class="social-icons">
+                <img src="img/facebook.svg" alt="Facebook">
+                <img src="img/instagram.svg" alt="Instagram">
+                <img src="img/twitter.svg" alt="Twitter">
+                <img src="img/pinterest.svg" alt="Pinterest">
+                <img src="img/tktok.svg" alt="TikTok">
+                <img src="img/whatsapp.svg" alt="WhatsApp">
+                <img src="img/youtube.svg" alt="YouTube">
+            </div>
+            <div class="copyright">
+                &copy; 2023 by Company. Proudly created with HTML & CSS.
+            </div>
+        </div>
 </body>
 
 </html>
