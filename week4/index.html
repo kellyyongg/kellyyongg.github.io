@@ -6,20 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>index</title>
 
-    <style> 
-        h1, h2, h3, h4, h5, h6 {
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: 'Crimson Text', serif;
         }
+
         p {
             font-family: 'Work Sans', sans-serif;
         }
 
         #container {
-            background-color:#74c69d;
+            background-color: #74c69d;
             max-width: 1280px;
             margin: auto;
             padding-left: 40px;
@@ -29,7 +37,7 @@
         #nav {
             display: flex;
             justify-content: space-between;
-            align-items: center; 
+            align-items: center;
             padding: 20px;
 
         }
@@ -38,17 +46,18 @@
             display: flex;
             align-items: center;
         }
+
         .logo img {
-            width:200px;
+            width: 200px;
             margin-right: 10px;
         }
 
         .menu {
-        font-family: 'Work Sans', sans-serif;
-        display: flex;
-        gap: 20px;
-        color: white;
-        font-size: 16px;
+            font-family: 'Work Sans', sans-serif;
+            display: flex;
+            gap: 20px;
+            color: white;
+            font-size: 16px;
         }
 
         .menu a {
@@ -63,7 +72,6 @@
             padding: 50px 0;
             padding-left: 40px;
             padding-right: 40px
-
         }
 
         #banner-text {
@@ -84,7 +92,7 @@
             font-size: 14px;
             color: white;
             letter-spacing: 2px;
-            
+
         }
 
         #banner-text p {
@@ -98,7 +106,7 @@
         }
 
         #banner-image {
-            width: 50%; 
+            width: 50%;
             margin-right: 20px;
         }
 
@@ -106,6 +114,21 @@
             width: 100%;
         }
 
+        .button-container {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 40px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 16px;
+        }
     </style>
 
 </head>
@@ -125,10 +148,13 @@
         <div id="banner">
             <div id="banner-text">
                 <h5>WELCOME</h5>
-                 <h1>Lorem ipsum dolor sit amet consectetur</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
-                <button>Explore</button>
+                <h1>Lorem ipsum dolor sit amet consectetur</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam
+                    nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+                <div class="button-container">
+                    <button>Explore</button>
                 </div>
+            </div>
             <div id="banner-image"><img src="img/happyteam.png" width="100%"></div>
         </div>
     </div>
