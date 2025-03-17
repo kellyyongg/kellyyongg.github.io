@@ -27,7 +27,7 @@
         }
 
         #container {
-            background-color: #74c69d;
+            background-color: white;
             max-width: 1280px;
             margin: auto;
             padding-left: 40px;
@@ -39,12 +39,18 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-
+            background-color: #74c69d;
+            max-width: 1280px;
+            margin: auto;
+            padding-left: 60px;
+            padding-right: 60px;
         }
 
         .logo {
             display: flex;
+            justify-content: space-between;
             align-items: center;
+
         }
 
         .logo img {
@@ -55,6 +61,8 @@
         .menu {
             font-family: 'Work Sans', sans-serif;
             display: flex;
+            justify-content: space-between;
+            align-items: center;
             gap: 20px;
             color: white;
             font-size: 16px;
@@ -69,17 +77,18 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            background-color: #74c69d;
             padding: 50px 0;
             padding-left: 40px;
             padding-right: 40px
         }
 
         #banner-text {
+            display: block;
             width: 35%;
             padding: 20px;
             color: white;
             margin-left: 20px;
-            margin-top: -20px
         }
 
         #banner-text h1 {
@@ -116,7 +125,12 @@
 
         .button-container {
             display: flex;
+            justify-content: space-between;
+            align-items: space-between;
+            max-width: 1280px;
+            margin: auto;
             margin-top: 20px;
+            padding: 0;
         }
 
         .button-container button {
@@ -131,11 +145,12 @@
         }
 
         .partners-container {
-            width: 90%;
-            max-width: 1280px;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
             margin: 0 auto;
-            padding: 30px 0;
             text-align: center;
+
         }
 
         .partners h5 {
@@ -159,19 +174,26 @@
 
         .logos {
             display: flex;
-            justify-content: center;
-            gap: 80px;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
             margin-top: 20px;
+            padding-left: 65px;
+            padding-right: 65px;
+
         }
 
         .logos img {
             width: 100px;
             height: auto;
+            padding: 80px 55px;
+            gap: 80px;
         }
 
-        .button-container {
+        .partners .button-container {
             display: flex;
             justify-content: center;
+            align-items: center;
             margin-top: 20px;
         }
 
@@ -189,10 +211,10 @@
         .collaborate-container {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             max-width: 1280px;
-            margin: 10px;
-            padding: 80px 20px;
+            margin: auto;
+            padding: 80px 55px;
             gap: 80px;
         }
 
@@ -206,6 +228,8 @@
 
         .collaborate-text {
             width: 35%;
+            padding: 80px 55px;
+            gap: 80px;
         }
 
         .collaborate-text h1 {
@@ -221,6 +245,43 @@
             line-height: 1.6;
             opacity: 0.5;
         }
+
+        .security-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1280px;
+            margin: auto;
+            padding: 0 80px;
+            gap: 80px;
+        }
+
+        .security-image {
+            width: 50%;
+            padding: 80px 55px;
+            gap: 80px;
+        }
+
+        .security-text {
+            width: 45%;
+            padding: 80px 55px;
+            gap: 80px;
+
+        }
+
+        .security-text h1 {
+            font-family: 'Crimson Text', serif;
+            font-size: 28px;
+            color: #000;
+            font-weight: 700;
+        }
+
+        .security-text p {
+            font-size: 16px;
+            color: black;
+            line-height: 1.6;
+            opacity: 0.5;
+        }
     </style>
 
 </head>
@@ -228,8 +289,7 @@
 <body>
     <div id="container">
         <div id="nav">
-            <div class="logo"><img src="img/logo.png">
-            </div>
+            <div class="logo"><img src="img/logo.png"></div>
             <div class="menu">
                 <a href="#">Home</a>
                 <a href="#">Portfolio</a>
@@ -249,39 +309,54 @@
             </div>
             <div id="banner-image"><img src="img/happyteam.png" width="100%"></div>
         </div>
-    </div>
 
-    <div class="partners-container">
-        <div class="partners">
-            <h5>PARTNERS</h5>
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <p>adipisicing elit.</p>
-            <div class="logos">
-                <img src="img/google.png" width="100px">
-                <img src="img/microsoft.png" width="100px">
-                <img src="img/airbnb.png" width="100px">
-                <img src="img/facebook.png" width="100px">
-                <img src="img/spotify.png" width="100px">
+
+        <div class="partners-container">
+            <div class="partners">
+                <h5>PARTNERS</h5>
+                <h2>Lorem Ipsum Dolor</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <p>adipisicing elit.</p>
+                <div class="logos">
+                    <img src="img/google.png" width="100px">
+                    <img src="img/microsoft.png" width="100px">
+                    <img src="img/airbnb.png" width="100px">
+                    <img src="img/facebook.png" width="100px">
+                    <img src="img/spotify.png" width="100px">
+                </div>
+                <div class="button-container">
+                    <button class="dark-button">Learn More</button>
+                </div>
             </div>
-            <div class="button-container">
+        </div>
+
+        <div class="collaborate-container">
+            <div class="collaborate-image">
+                <img src="img/3pplgroup.svg" alt="Collaboration Image">
+            </div>
+            <div class="collaborate-text">
+                <h1>Lorem ipsum dolor sit amet consectetur</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam
+                    nobis
+                    cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
                 <button class="dark-button">Learn More</button>
             </div>
         </div>
     </div>
 
-    <div class="collaborate-container">
-        <div class="collaborate-image">
-            <img src="img/3pplgroup.svg" alt="Collaboration Image">
-        </div>
-        <div class="collaborate-text">
+    <div class="security-container">
+        <div class="security-text">
             <h1>Lorem ipsum dolor sit amet consectetur</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam
+                nobis
                 cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
             <button class="dark-button">Learn More</button>
         </div>
+        <div class="security-image">
+            <img src="img/security.svg" alt="Security Image">
+        </div>
     </div>
-
+    </div>
 
 </body>
 
