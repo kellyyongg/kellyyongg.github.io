@@ -57,3 +57,54 @@ p {
     padding-left: 20px;
     padding-right: 20px
 }
+
+@media screen and (max-width: 768px) {
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .footer {
+        background-color: #74c69d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 14px;
+    }
+
+    .footer .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+
+    .footer .social-icons img {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .footer .social-icons img:hover {
+        transform: scale(1.2);
+    }
+
+    .footer .copyright {
+        font-size: 14px;
+        color: white;
+        opacity: 0.8;
+        margin-top: 10px;
+    }
+}
