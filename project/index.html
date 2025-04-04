@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="general.css">
 
     <style>
+        body {
+            margin: 0;
+        }
+
         #container {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            margin: 0;
+
         }
 
         #navbar {
@@ -21,6 +27,25 @@
             align-items: center;
             width: 100%;
             background-color: #EBC603;
+        }
+
+        #logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #menu a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
             padding: 10px 20px;
         }
     </style>
@@ -29,17 +54,18 @@
 <body>
     <div id="container">
         <div id="navbar">
-            <div id="menu">
-                <a href="Sarawak Chinese Food">swk food</a>
-                <a href="Signature Dish">Signature</a>
-                <a href="About Sarawak">About swk</a>
-                <a href="Recipe">Recipe</a>
-                <a href="Contact">Contact</a>
-            </div>
             <div id="logo">
                 <img src="img/logo.png" alt="Logo" width="100" height="100">
             </div>
+            <div id="menu">
+                <a href="#">Sarawak Chinese Food</a>
+                <a href="#">Signature Dish</a>
+                <a href="#">About Sarawak</a>
+                <a href="#">Recipe</a>
+                <a href="#">Contact</a>
+            </div>
         </div>
     </div>
+</body>
 
 </html>
