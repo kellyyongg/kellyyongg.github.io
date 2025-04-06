@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="general.css">
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
         }
@@ -19,7 +25,9 @@
             flex-direction: column;
             margin: 0;
             background-color: #F5F5DC;
-            height: 100vh;
+
+
+
         }
 
         #navbar {
@@ -30,7 +38,6 @@
             width: 100%;
             background-color: #EBC603;
             z-index: 10;
-            padding: 15px 0;
 
         }
 
@@ -49,30 +56,89 @@
         }
 
         .homepagebanner {
-
-            text-align: center;
-            color: white;
-            height: 100vh;
+            position: relative;
+            width: 100%;
             overflow: hidden;
+            padding: 0;
+
         }
 
         .homepagebanner img {
             width: 100%;
-            height: 100%;
+            height: auto;
             z-index: 1;
+            margin-top: 0;
         }
 
-        .homepagebanner h1 {
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .banner-text h1 {
+            color: #F5F5DC;
             margin: 0;
-            z-index: 2;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.6), 2px 2px 8px rgba(0, 0, 0, 0.7), 4px 4px 12px rgba(0, 0, 0, 0.9);
+            white-space: nowrap;
         }
 
-        .homepagebanner h5 {
-            color: #fff;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-            margin: 10px 0;
+        .banner-text h5 {
+            color: #F5F5DC;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.6), 2px 2px 8px rgba(0, 0, 0, 0.7), 4px 4px 12px rgba(0, 0, 0, 0.9);
             z-index: 2;
+            margin-top: 15px;
+        }
+
+        .intro-section {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .intro-section h5 {
+            color: #F5F5DC;
+            margin-bottom: 10px;
+        }
+
+        .intro-section h2 {
+            color: #EBC603;
+            margin-bottom: 20px;
+        }
+
+        .line-under-title {
+            width: 100px;
+            height: 2px;
+            background-color: #EBC603;
+            margin: 10px auto 20px;
+
+        }
+
+        .intro-section p {
+            color: #F5F5DC;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .intro-section strong {
+            color: #F5F5DC;
+        }
+
+        .button-redcolor {
+            background-color: #B22222;
+            color: #F5F5DC;
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s ease;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -92,12 +158,26 @@
             </div>
         </div>
         <div class="homepagebanner">
-            <div>
-                <img src="img/alottypesfoos.png" alt="A lot of types of food">
+            <img src="img/alottypesfoos.png" alt="A lot of types of food">
+            <div class="banner-text">
                 <h1>Sarawak Welcomes You!!</h1>
                 <h5>Taste The Heart Of Sarawak!</h5>
             </div>
         </div>
+        <div class="intro-section">
+            <h5>YOUR WAY TO</h5>
+            <h2>Sarawak Chinese Food</h2>
+            <div class="line-under-title"></div>
+            <p>Sarawak Chinese food is a <strong>UNIQUE</strong> blend of tradition and local flavours. Influenced by
+                generations of Hokkien, Hakka, Teochew, and Foochow communities. From the iconic <strong>Kolo
+                    Mee</strong> to the rich, spicy <strong>Sarawak Laksa</strong>, every dish tells a story of heritage
+                and harmony.</p>
+            <a href="#more" class="button-redcolor">Find Out More</a>
+
+
+        </div>
+    </div>
+    </div>
 </body>
 
 </html>
