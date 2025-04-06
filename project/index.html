@@ -29,7 +29,7 @@
             justify-content: space-around;
             width: 100%;
             background-color: #EBC603;
-            z-index: index 100;
+            z-index: 10;
             padding: 15px 0;
 
         }
@@ -46,6 +46,33 @@
             text-decoration: none;
             font-size: 18px;
             padding: 15px 20px;
+        }
+
+        .homepagebanner {
+
+            text-align: center;
+            color: white;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .homepagebanner img {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .homepagebanner h1 {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin: 0;
+            z-index: 2;
+        }
+
+        .homepagebanner h5 {
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin: 10px 0;
+            z-index: 2;
         }
     </style>
 </head>
@@ -64,7 +91,13 @@
                 <a href="#">Contact</a>
             </div>
         </div>
-    </div>
+        <div class="homepagebanner">
+            <div>
+                <img src="img/alottypesfoos.png" alt="A lot of types of food">
+                <h1>Sarawak Welcomes You!!</h1>
+                <h5>Taste The Heart Of Sarawak!</h5>
+            </div>
+        </div>
 </body>
 
 </html>
