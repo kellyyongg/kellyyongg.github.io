@@ -15,31 +15,50 @@
 
         body {
             margin: 0;
+            padding: 0;
         }
 
         .wrapper {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
             flex-direction: column;
-            margin: 0;
+            align-items: center;
             background-color: #F5F5DC;
         }
 
         #navbar {
             position: fixed;
             top: 0;
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
+            left: 0;
+            right: 0;
             background-color: #EBC603;
             z-index: 10;
         }
 
-        #menu {
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 10px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+
+        #logo {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 10px;
+            gap: 60px;
 
         }
 
@@ -47,7 +66,6 @@
             color: black;
             text-decoration: none;
             font-size: 18px;
-            padding: 15px 20px;
         }
 
         .homepagebanner {
@@ -91,6 +109,9 @@
         }
 
         .intro-section {
+            width: 100%;
+            max-width: 1280px;
+            box-sizing: border-box;
             background-color: #1e1e1e;
             text-align: center;
             padding: 80px 20px;
@@ -188,15 +209,17 @@
 
 <body>
     <div id="navbar">
-        <div id="logo">
-            <img src="img/logo.png" alt="Logo" width="70" height="70">
-        </div>
-        <div id="menu">
-            <a href="#">Sarawak Chinese Food</a>
-            <a href="#">Signature Dish</a>
-            <a href="#">About Sarawak</a>
-            <a href="#">Recipe</a>
-            <a href="#">Contact</a>
+        <div class="nav-container">
+            <div id="logo">
+                <img src="img/logo.png" alt="Logo" width="70" height="70">
+            </div>
+            <div id="menu">
+                <h6><a href="#">Sarawak Chinese Food</a></h6>
+                <h6><a href="#">Signature Dish</a></h6>
+                <h6><a href="#">About Sarawak</a></h6>
+                <h6><a href="#">Recipe</a></h6>
+                <h6><a href="#">Contact</a></h6>
+            </div>
         </div>
     </div>
     <div class="wrapper">
@@ -239,6 +262,7 @@
 
             </div>
         </div>
+    </div>
 
 </body>
 
