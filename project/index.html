@@ -273,6 +273,51 @@
             transition: 0.3s ease;
             margin-top: 10px;
         }
+
+        .kuchingbanner {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding: 0;
+            margin-top: 50px;
+        }
+
+        .kuchingbanner img {
+            width: 100%;
+            height: auto;
+            z-index: 5;
+        }
+
+        .kuchingbanner .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 2;
+            color: white;
+            pointer-events: none;
+            width: 80%;
+        }
+
+        .kuchingbanner .banner-text h3 {
+            color: #EBC603;
+            margin: 0;
+
+
+        }
+
+        .kuchingbanner .banner-text p {
+            color: #F5F5DC;
+            margin-top: 50px;
+        }
+
+        .kuchingbanner .button-fill {
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
     </style>
 </head>
 
@@ -340,8 +385,19 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div class="kuchingbanner">
+            <img src="img/kuching.png" alt="Kuching">
+            <div class="banner-text">
+                <h3>About Sarawak</h3>
+                <div class="line-under-title"></div>
+                <p>Sarawak is a land of <strong>rich traditions, diverse cultures,</strong> and unforgettable
+                    flavours. From vibrant markets to age-old recipes, every corner tells a story waiting to be
+                    explored.</p>
+                <button class="button-fill">Explore</button>
+            </div>
 
+        </div>
+    </div>
 </body>
 
 
