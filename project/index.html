@@ -110,7 +110,6 @@
 
         .intro-section {
             width: 100%;
-            max-width: 1280px;
             box-sizing: border-box;
             background-color: #1e1e1e;
             text-align: center;
@@ -174,13 +173,18 @@
 
         .intro-dish {
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: center;
             align-items: center;
             padding: 50px 20px;
             background-color: #F5F5DC;
+            flex-direction: column;
+
         }
 
         .intro-dish .text {
+            text-align: center;
+            margin-bottom: 30px;
             flex: 1;
             padding: 20px;
         }
@@ -203,6 +207,71 @@
             padding-left: 120px;
             padding-right: 120px;
             line-height: 1.6;
+        }
+
+        .intro-dish .dish {
+            display: flex;
+            justify-content: center;
+            flex: 2;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .intro-dish .dish .dish1,
+        .intro-dish .dish .dish2,
+        .intro-dish .dish .dish3 {
+            text-align: center;
+            background-color: #1E1E1E;
+            border-radius: 25px;
+            padding: 80px 20px 30px;
+            width: 180px;
+            margin: 10px;
+            padding-top: 60px;
+            position: relative;
+            z-index: 1;
+            overflow: visible;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+
+        }
+
+        .intro-dish .dish img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            position: absolute;
+            top: -70px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+
+        }
+
+        .intro-dish .dish h5 {
+            margin-top: 100px;
+            color: #F5F5DC;
+        }
+
+        .intro-dish .dish p {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #F5F5DC;
+        }
+
+        .button-outline {
+            background-color: transparent;
+            color: #B22222;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 1px solid #B22222;
+            border-radius: 20px;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s ease;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -255,11 +324,20 @@
             </div>
             <div class="dish">
                 <div class="dish1">
-
-
-
+                    <img src="img/kolomee circle.png" alt="Kolo Mee">
+                    <h5>Kolo Mee</h5>
+                    <p><button class="button-outline">View More</button></p>
                 </div>
-
+                <div class="dish2">
+                    <img src="img/laksa circle.png" alt="Sarawak Laksa">
+                    <h5>Sarawak Laksa</h5>
+                    <p><button class="button-outline">View More</button></p>
+                </div>
+                <div class="dish3">
+                    <img src="img/leicha circle.png" alt="Lei Cha">
+                    <h5>Lei Cha</h5>
+                    <p><button class="button-outline">View More</button></p>
+                </div>
             </div>
         </div>
     </div>
