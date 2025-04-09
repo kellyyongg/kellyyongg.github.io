@@ -178,36 +178,6 @@ p {
         font-size: 40px;
     }
 
-    .nav-container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .footer .menu {
-        gap: 40px;
-    }
-
-    .footer .social-icons {
-        align-items: center;
-        gap: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 50px;
-    }
-
-    h2 {
-        font-size: 40px;
-    }
-
     h3 {
         font-size: 36px;
     }
@@ -226,6 +196,29 @@ p {
         font-size: 16px;
     }
 
+    .nav-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer .menu {
+        gap: 40px;
+    }
+
+    .footer .social-icons {
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
         gap: 40px;
