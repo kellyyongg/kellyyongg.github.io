@@ -55,7 +55,7 @@ p {
     font-weight: 400;
 }
 
-#navbar {
+.navbar {
     position: sticky;
     top: 0;
     background-color: #EBC603;
