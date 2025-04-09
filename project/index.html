@@ -179,30 +179,20 @@
 
 
         .kuchingbanner {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            padding: 0;
-            margin-top: 50px;
-
-        }
-
-        .kuchingbanner img {
-            width: 100%;
-            height: auto;
-            z-index: 5;
+            background-image: url("img/kuching.jpg");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 400px;
         }
 
         .kuchingbanner .banner-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            justify-content: center;
+            align-items: center;
             text-align: center;
             z-index: 2;
-            color: white;
-            pointer-events: none;
-            width: 80%;
         }
 
         .kuchingbanner .banner-text h3 {
@@ -377,7 +367,6 @@
 
     </div>
     <div class="kuchingbanner">
-        <img src="img/kuching.png" alt="Kuching">
         <div class="banner-text">
             <h3>About Sarawak</h3>
             <div class="line-under-title"></div>
