@@ -170,6 +170,14 @@ p {
 }
 
 @media(max-width:1000px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
     .nav-container {
         flex-direction: column;
         gap: 30px;
@@ -196,6 +204,31 @@ p {
 }
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    h4 {}
+
+    h5 {
+        font-size: 24px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
 
     .nav-container {
         flex-direction: column;
@@ -219,5 +252,6 @@ p {
         align-items: center;
         gap: 10px;
     }
+
 
 }
