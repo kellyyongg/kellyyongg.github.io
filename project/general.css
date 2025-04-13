@@ -45,8 +45,8 @@ h5 {
 
 h6 {
     font-family: 'Noto Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 p {
@@ -89,7 +89,11 @@ p {
 .menu a {
     color: black;
     text-decoration: none;
-    font-size: 18px;
+    transition: font-weight 0.2s ease;
+}
+
+.menu a:hover {
+    font-weight: 800;
 }
 
 .button {
@@ -112,6 +116,11 @@ p {
     border: none;
     outline: none;
     box-shadow: none;
+    opacity: 1;
+}
+
+.button-fill:hover {
+    opacity: 0.5;
 }
 
 .button-outline {
@@ -126,6 +135,16 @@ p {
     font-weight: bold;
     transition: 0.3s ease;
     margin-top: 10px;
+}
+
+.button-outline:hover {
+    background-color: #B22222;
+    color: #F5F5DC;
+    border: 1px solid #B22222;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 
