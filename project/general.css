@@ -101,7 +101,14 @@ p {
     position: absolute;
     min-width: 160px;
     z-index: 1;
+    background-color: #EBC603;
+    border-radius: 8px;
+    padding: 30px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: max-content;
 }
+
+
 
 .menu-item:hover .submenu {
     display: block;
