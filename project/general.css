@@ -189,7 +189,7 @@ p {
     text-align: center;
     padding: 20px 0;
     width: 100%;
-    position: sticky;
+    position: relative;
     bottom: 0;
 
 }
