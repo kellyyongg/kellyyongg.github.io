@@ -43,7 +43,7 @@
         .banner-image {
             position: relative;
             width: 100%;
-            min-height: 700px;
+            min-height: 600px;
         }
 
         .dragon {
@@ -91,6 +91,47 @@
             margin-left: 320px;
             margin-right: 50px;
             margin-top: 100px;
+        }
+
+        .howdifferent {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+        }
+
+        .howdifferent .line-under-title {
+            text-align: center;
+            display: block;
+        }
+
+        .how-image {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 100px;
+            width: 100%;
+            min-height: 300px;
+            margin-top: 50px;
+        }
+
+        .how-image img {
+            object-fit: cover;
+        }
+
+        .belacan {
+            margin-left: 100px;
+            margin-right: 100px;
+            z-index: 1;
+        }
+
+        .laksa {
+            margin-left: 300px;
+            margin-right: 100px;
+            margin-top: 320px;
+            z-index: 2;
+            position: absolute;
         }
     </style>
 </head>
@@ -168,8 +209,35 @@
                 </div>
             </div>
 
+            <div class="howdifferent">
+                <h3>How is Sarawak Chinese Food Different?</h3>
+                <div class="line-under-title"></div>
+
+                <div class="belacan">
+                    <div class="how-image">
+                        <img src="img/belacan.jpg">
+                        <div class="how-text">
+                            <h4>Unique Local Influences</h4>
+                            <p>Uses Sarawak ingredients like BELACAN and wild ferns.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="laksa">
+                    <div class="how-image">
+                        <img src="img/laksa.jpg">
+                        <div class="how-text">
+                            <h4>Distinctive Dishes</h4>
+                            <p>Home to Kolo Mee, Sarawak Laksa, and Leicha Mee Sua.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     </div>
+
 
     <div class="footer">
         <div class="logo">
