@@ -29,6 +29,95 @@
             margin: 20px auto;
             align-items: center;
         }
+
+        .introduction {
+            display: flex;
+            gap: 200px;
+            margin-top: 100px;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .introduction-text p {
+            padding-top: 20px;
+            max-width: 350px;
+        }
+
+        .introduction-text .line-under-title {
+            background-color: #1e1e1e;
+            margin: 20px 0;
+            align-items: center;
+        }
+
+        .history {
+            display: flex;
+            gap: 200px;
+            margin-top: 100px;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .history-text .line-under-title {
+            background-color: #1e1e1e;
+            margin: 20px 0;
+            align-items: left;
+        }
+
+        .history-text p {
+            padding-top: 20px;
+        }
+
+        .recommend-restaurant {
+            margin-top: 100px;
+            text-align: center;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .recommend-restaurant h4 {
+            padding-bottom: 20px;
+        }
+
+        .recommend-restaurant .line-under-title {
+            background-color: #1e1e1e;
+            height: 2px;
+            width: 80px;
+            margin: 20px auto;
+        }
+
+        .recommend-restaurant img {
+            width: 100%;
+        }
+
+        .group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 40px;
+            padding: 0 20px;
+        }
+
+        .group.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .group-image {
+            flex: 1 1 400px;
+            max-width: 500px;
+            text-align: left;
+        }
+
+        .text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 30%;
+        }
     </style>
 
 
@@ -72,7 +161,8 @@
             <div class="line-under-title"></div>
 
             <div class="introduction">
-                <div class="introduction-image"><img src="img/kolomee circle.png">
+                <div class="introduction-image">
+                    <img src="img/kolomee circle.png" width="600" height="600">
 
                 </div>
                 <div class="introduction-text">
@@ -83,13 +173,61 @@
                         served without dark soy sauce, keeping its light, fragrant flavors. A true Sarawak classic!</p>
 
                 </div>
+            </div>
 
+            <div class="history">
+                <div class="history-text">
+                    <h3>History</h3>
+                    <div class="line-under-title"></div>
+
+                    <p>Kolo Mee traces its roots to Sarawak’s Hakka community, who brought their noodle-making
+                        traditions from China. Over time, they adapted the dish using local ingredients, creating its
+                        signature light and fragrant flavors.</p>
+                    <p>Unlike other Chinese noodles, Kolo Mee is served without dark soy sauce, highlighting its natural
+                        taste. Today, it remains a staple in Sarawak, enjoyed in various styles across the state.</p>
+                </div>
+                <div class="history-image">
+                    <img src="img/kolomeehistory.png" width="435" height="465">
+                </div>
+            </div>
+
+            <div class="recommend-restaurant">
+                <h3>Recommended Restaurant</h3>
+                <div class="line-under-title"></div>
+                <h4>Sin Lian Shin</h4>
+                <img src="img/restaurantsinlianshin.jpg">
+
+                <div class="group">
+                    <div class="group-image">
+                        <h6>About Sin Lian Shin</h6>
+                        <img src="img/aboutsinlianshin.jpg">
+                        <p>This shop has been here for quite a while. Roughly more than 5 decades and still serving
+                            their legendary Kolo Mee until today. </p>
+                        <p>Because it is located near schools, this place is a really popular breakfast spot for
+                            students and their parents before school starts.
+                        </p>
+                    </div>
+                </div>
+                <div class="group-reverse">
+                    <div class="group-image">
+                        <h6>About Sin Lian Shin</h6>
+                        <img src="img/sinlianshinkolomee.jpg">
+                        <p>This shop has been here for quite a while. Roughly more than 5 decades and still serving
+                            their
+                            legendary Kolo Mee until today. </p>
+                        <p>Because it is located near schools, this place is a really popular breakfast spot for
+                            students
+                            and their parents before school starts.
+                        </p>
+                    </div>
+                </div>
 
             </div>
 
+            <div class="">
 
+            </div>
         </div>
-
     </div>
 
 </body>
