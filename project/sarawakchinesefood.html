@@ -99,7 +99,8 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-
+            position: relative;
+            min-height: 1000px;
         }
 
         .howdifferent .line-under-title {
@@ -118,7 +119,13 @@
         }
 
         .how-image img {
+            width: 40%;
             object-fit: cover;
+            height: auto;
+        }
+
+        .how-text {
+            width: 50%;
         }
 
         .belacan {
@@ -135,18 +142,23 @@
             position: absolute;
         }
 
+        .how-image.reverse {
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+
         .fusion {
-            margin-left: 500px;
+            margin-left: 100px;
             margin-right: 100px;
-            margin-top: 700px;
+            margin-top: 750px;
             z-index: 3;
             position: absolute;
         }
 
         .flavors {
-            margin-left: 700px;
+            margin-left: 100px;
             margin-right: 100px;
-            margin-top: 1050px;
+            margin-top: 950px;
             z-index: 4;
             position: absolute;
         }
@@ -251,7 +263,7 @@
                 </div>
 
                 <div class="fusion">
-                    <div class="how-image">
+                    <div class="how-image reverse">
                         <img src="img/fusion.jpg">
                         <div class="how-text">
                             <h4>Fusion of Cultures</h4>
@@ -261,16 +273,16 @@
                 </div>
 
                 <div class="flavors">
-                    <div class="how-image">
+                    <div class="how-image reverse">
                         <img src="img/flavors.jpg">
                         <div class="how-text">
                             <h4>Lighter & Balanced Flavors,</h4>
                             <p>Less oily, with fresh, natural seasoning.</p>
                         </div>
+
                     </div>
-
-
                 </div>
+
             </div>
         </div>
     </div>
