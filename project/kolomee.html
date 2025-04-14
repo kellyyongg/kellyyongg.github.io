@@ -83,8 +83,6 @@
 
         .recommend-restaurant .line-under-title {
             background-color: #1e1e1e;
-            height: 2px;
-            width: 80px;
             margin: 20px auto;
         }
 
@@ -117,6 +115,90 @@
             flex-direction: column;
             gap: 15px;
             max-width: 30%;
+        }
+
+        .reviews-section {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .reviews-section h3 {
+            color: #1e1e1e;
+        }
+
+        .reviews-section .line-under-title {
+            background-color: #1e1e1e;
+            margin: 20px auto;
+        }
+
+        .review-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            width: 280px;
+            padding: 30px 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+            text-align: center;
+        }
+
+        .profile-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            font-weight: bold;
+            font-size: 22px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .profile-icon img {
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+            width: 18px;
+            height: 18px;
+        }
+
+
+        .reviewer-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .stars {
+            color: #ffc107;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .review-text {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .otherdish {
+            text-align: center;
+            background-color: #1e1e1e;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .otherdish p {
+            color: #F5F5DC;
         }
     </style>
 
@@ -224,8 +306,130 @@
 
             </div>
 
-            <div class="">
+            <div class="reviews-section">
+                <h3>Reviews</h3>
+                <div class="line-under-title"></div>
 
+                <div class="review-cards">
+
+                    <div class="card">
+                        <div class="profile-photo">
+                            <img src="img/j.png">
+                        </div>
+                        <div class="reviewer-name">
+                            <h6>JiunHorng</h6>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <div class="review-text">
+                            <p>Their noodle texture are very unique and keep their return to them for decades. It is
+                                nice &
+                                definitely making them stand out from the stiff competition.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="profile-photo">
+                            <img src="img/a.png">
+                        </div>
+                        <div class="reviewer-name">
+                            <h6>Andrew W.</h6>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <div class="review-text">
+                            <p>Took a trip out of Kuching downtown to Sin Lian Shin for the locals’ choice for Kolo mee,
+                                and I didn’t leave disappointed.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="profile-photo">
+                            <img src="img/p.png">
+                        </div>
+                        <div class="reviewer-name">
+                            <h6>Paul F</h6>
+                        </div>
+                        <div class="stars">★★★★☆</div>
+                        <div class="review-text">
+                            <p>Good bowl of kolo mee. Due to its good reputation built over the years, it’s cost you a
+                                bit
+                                more compared to elsewhere in town.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant2">
+            <h4>Kafe Bujang Lelang</h4>
+            <img src="img/kafebujanglelang.jpg">
+
+            <div>
+                <h6>Kolo Mee at Kafe Bujang Lelang</h6>
+                <img src="img/aboutkafebujang.jpg">
+                <p>This place serves Mee Kolok a little differently from your usual Chinese go-to Mee Kolok. This stall
+                    is owned by Dayak, thus the method of preparation is a little different.</p>
+                <p>They serve add-on pork sausage and pork intestines as toppings. </p>
+            </div>
+
+        </div>
+        <div class="reviews-section">
+            <h3>Reviews</h3>
+            <div class="line-under-title"></div>
+
+            <div class="review-cards">
+
+                <div class="card">
+                    <div class="profile-photo">
+                        <img src="img/profile1.png">
+                    </div>
+                    <div class="reviewer-name">
+                        <h6>Gabbriel</h6>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <div class="review-text">
+                        <p>The mee taste is average but the meat portion is amazing. Many options ranging from normal to
+                            extra special.</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="profile-photo">
+                        <img src="img/profile2.png">
+                    </div>
+                    <div class="reviewer-name">
+                        <h6>Rossa Jynthia</h6>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <div class="review-text">
+                        <p>Kolo mee a bit sweet,but its okay. Just you have to wait around 20minute for Kolo Mee Special
+                            & it worth the wait & journey from Kch to Siburan
+                            Maybe the owner would upgrade the bowl to a bigger bowl next time</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="profile-photo">
+                        <img src="img/profile3.png">
+                    </div>
+                    <div class="reviewer-name">
+                        <h6>Lesley Naul</h6>
+                    </div>
+                    <div class="stars">★★★★☆</div>
+                    <div class="review-text">
+                        <p>Superb mee kolok for mee kolok enthusiast. The noodle by itself is already excellent and the
+                            toppings are extremely good. They are distinctly different but mix really well together
+                            perfectly in harmony.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="otherdish">
+            <p>Discover more delicious Sarawak Chinese dishes and their rich history!</p>
+            <div class="button">
+                <button class="button-fill">Find Out More</button>
             </div>
         </div>
     </div>
