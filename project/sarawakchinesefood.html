@@ -15,8 +15,12 @@
             padding: 0 30px;
             box-sizing: border-box;
             background-color: #F5F5DC;
+            overflow: visible;
         }
 
+        .banner {
+            overflow: visible;
+        }
 
         .banner-content {
             display: flex;
@@ -24,20 +28,7 @@
             align-items: flex-start;
             gap: 30px;
             margin-top: 40px;
-        }
-
-        .banner-image,
-        .banner-text {
-            flex: 1 1 400px;
-        }
-
-
-        .banner-text {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            gap: 20px;
-
+            overflow: visible;
         }
 
         .banner h3 {
@@ -51,10 +42,36 @@
             margin: 20px 0 20px;
         }
 
-        .banner-image .dragon {
-            display: flex;
-            margin-top: 50px;
+        .banner-image {
+            position: relative;
+            min-height: 600px;
+        }
 
+        .dragon {
+            z-index: 1;
+            top: 0;
+            left: 0;
+        }
+
+        .lantern {
+            position: absolute;
+            top: 320px;
+            left: 250px;
+            z-index: 2;
+        }
+
+        .family {
+            position: absolute;
+            top: 440px;
+            left: 550px;
+            z-index: 3;
+        }
+
+        .banner-text {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 20px;
         }
     </style>
 </head>
