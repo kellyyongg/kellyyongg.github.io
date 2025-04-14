@@ -12,14 +12,17 @@
         .container {
             max-width: 1280px;
             margin: 0 auto;
-            padding: 0 30px;
             box-sizing: border-box;
+            padding-left: 20px;
+            padding-right: 20px;
             background-color: #F5F5DC;
-            overflow: visible;
+            min-height: 2300px;
         }
 
         .banner {
             overflow: visible;
+            background-color: #F5F5DC;
+            width: 100%;
         }
 
         .banner h3 {
@@ -137,7 +140,7 @@
         .laksa {
             margin-left: 300px;
             margin-right: 100px;
-            margin-top: 350px;
+            margin-top: 400px;
             z-index: 2;
             position: absolute;
         }
@@ -149,7 +152,7 @@
 
         .fusion {
             margin-left: 100px;
-            margin-right: 100px;
+            margin-right: 10px;
             margin-top: 750px;
             z-index: 3;
             position: absolute;
@@ -161,6 +164,35 @@
             margin-top: 950px;
             z-index: 4;
             position: absolute;
+        }
+
+        .introduction {
+            background-image: url("img/introductionkolomee.jpg");
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 350px;
+        }
+
+        .introduction h3 {
+            color: #EBC603;
+        }
+
+        .line-under-title {
+            background-color: #EBC603;
+            margin: 20px auto 20px;
+            margin-bottom: 50px;
+        }
+
+        .introduction p {
+            margin-top: 20px;
+            color: #F5F5DC;
+            padding-left: 20px;
+            padding-right: 20px;
         }
     </style>
 </head>
@@ -282,10 +314,23 @@
 
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
+    <div class="introduction">
+        <div>
+            <h3>Introduction</h3>
+            <div class="line-under-title"></div>
+            <p>Sarawak Chinese cuisine is a<strong>rich blend</strong>of traditional Chinese flavors with local
+                Sarawakian influences.</p>
+            <p>Sarawak’s food scene is a vibrant mix of indigenous, Malay, and Chinese influences, creating unique
+                flavors and dishes found nowhere else. From hearty laksa to flavorful jungle produce, every dish
+                tells a <strong>story of tradition and culture.</strong> </p>
+            <p>While Sarawak’s cuisine is diverse, this website focuses specifically on the rich and delicious world
+                of Sarawak Chinese food.</p>
+        </div>
+    </div>
+
 
 
 
