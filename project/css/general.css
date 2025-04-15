@@ -151,6 +151,7 @@ p {
 
 .button-fill:hover {
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .button-outline {
@@ -175,6 +176,7 @@ p {
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .line-under-title {
