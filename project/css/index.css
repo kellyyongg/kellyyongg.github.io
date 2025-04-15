@@ -1,5 +1,5 @@
 .homepagebanner {
-    background-image: url("img/alottypesfoos.png");
+    background-image: url("../img/alottypesfoos.png");
     background-size: cover;
     min-height: 550px;
     display: flex;
