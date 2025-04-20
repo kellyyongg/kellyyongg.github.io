@@ -149,7 +149,7 @@
 }
 
 .kuchingbanner {
-    background-image: url("img/kuching.jpg");
+    background-image: url("../img/kuching.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
