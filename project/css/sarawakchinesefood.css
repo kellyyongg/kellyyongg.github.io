@@ -48,12 +48,13 @@
 
 
 .howdifferent {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
+    background-color: #F5F5DC;
+    width: 100%;
+}
+
+.howdifferent h3 {
+    padding-top: 80px;
     text-align: center;
-    position: relative;
-    min-height: 1000px;
 }
 
 .howdifferent .line-under-title {
@@ -62,60 +63,44 @@
     align-items: center;
 }
 
-.how-image {
+.laksa,
+.belacan {
     display: flex;
-    align-items: center;
-    text-align: left;
     gap: 100px;
-    width: 100%;
-    min-height: 300px;
-    margin-top: 50px;
-}
-
-.how-image img {
-    width: 40%;
-    object-fit: cover;
-    height: auto;
-}
-
-.how-text {
-    width: 50%;
+    margin-top: 40px;
+    align-items: center;
 }
 
 .belacan {
     margin-left: 100px;
-    margin-right: 100px;
-    z-index: 1;
 }
 
 .laksa {
-    margin-left: 300px;
-    margin-right: 100px;
-    margin-top: 400px;
-    z-index: 2;
-    position: absolute;
+    margin-left: 400px;
+    margin-top: -80px;
 }
 
-.how-image.reverse {
+.fusion,
+.flavors {
+    display: flex;
+    gap: 100px;
+    margin-top: 40px;
+    align-items: center;
     flex-direction: row-reverse;
-    text-align: right;
 }
 
 .fusion {
-    margin-left: 100px;
-    margin-right: 10px;
-    margin-top: 750px;
-    z-index: 3;
-    position: absolute;
+    margin-right: 100px;
 }
 
 .flavors {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 950px;
-    z-index: 4;
-    position: absolute;
+    margin-right: 400px;
+    margin-top: -80px;
 }
+
+
+
+
 
 .introduction {
     background-image: url("../img/introductionkolomee.jpg");
