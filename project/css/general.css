@@ -187,17 +187,21 @@ p {
 
 .footer {
     background-color: #EBC603;
-    color: #F5F5DC;
+    flex-wrap: wrap;
+    justify-content: space-between;
     text-align: center;
     padding: 20px 0;
     width: 100%;
-    position: relative;
-    bottom: 0;
+}
 
+.logo,
+.menu,
+.social-icons,
+.copyright {
+    flex: 1 1 200px;
 }
 
 .footer .logo {
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -206,9 +210,40 @@ p {
 .footer .menu {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 60px;
     margin-top: 30px;
+}
+
+.footer-menu-section {
+    flex: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-submenu {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.footer-submenu li {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-submenu a {
+    text-decoration: none;
+    color: black
 }
 
 .footer .social-icons {
