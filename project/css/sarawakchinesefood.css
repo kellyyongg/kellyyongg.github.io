@@ -9,7 +9,6 @@
 }
 
 .banner {
-    overflow: visible;
     background-color: #F5F5DC;
     width: 100%;
 }
@@ -22,67 +21,14 @@
     background-color: #1e1e1e;
     margin: 20px 0;
     align-items: left;
-
 }
 
 .banner-contents {
     display: flex;
-    gap: 0px;
-    margin-top: 40px;
-    overflow: visible;
-}
-
-.banner-image {
-    position: relative;
-    width: 100%;
-    min-height: 600px;
-}
-
-.dragon {
-    z-index: 1;
-    top: 0;
-    left: 0;
-}
-
-.lantern {
-    position: absolute;
-    top: 300px;
-    left: 250px;
-    z-index: 2;
-}
-
-.family {
-    position: absolute;
-    top: 420px;
-    left: 550px;
-    z-index: 3;
-}
-
-.banner-text {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px 0;
     gap: 20px;
-
-}
-
-.symbolize {
-    margin-left: 10px;
-    margin-right: 200px;
-    margin-top: 60px;
-}
-
-.cny {
-    margin-left: 150px;
-    margin-right: 100px;
-    margin-top: 150px;
-}
-
-.passed {
-    margin-left: 320px;
-    margin-right: 50px;
-    margin-top: 100px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 .howdifferent {
