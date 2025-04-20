@@ -47,7 +47,6 @@
 }
 
 
-
 .howdifferent {
     margin-top: 100px;
     display: flex;
@@ -232,29 +231,41 @@
     .banner-contents-second,
     .banner-contents-third {
         flex-direction: column;
+        justify-items: center;
+        align-items: center;
         text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .intro-section p,
-    .intro-dish .text p {
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-top: 80px;
+        gap: 30px;
     }
 
-    .dish {
-        flex-direction: column;
-        align-items: center;
-
+    .banner-contents-second {
+        margin-left: 0;
     }
 
-    .intro-dish .dish {
-        flex-direction: column;
-        align-items: center;
-        gap: 100px;
+    .banner-contents-third {
+        margin-left: 0;
     }
 
 
-}
+    @media (max-width: 768px) {
+
+        .intro-section p,
+        .intro-dish .text p {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .dish {
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .intro-dish .dish {
+            flex-direction: column;
+            align-items: center;
+            gap: 100px;
+        }
+
+
+    }
