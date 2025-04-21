@@ -145,13 +145,12 @@
 }
 
 .aboutsls-text {
-    max-width: 400px;
     margin-top: 30px;
 }
 
 .aboutsls-text p {
     padding-top: 20px;
-    max-width: 350px;
+
 }
 
 .kolomeesls {
@@ -170,6 +169,10 @@
 .kolomeesls-text {
     max-width: 40%;
     margin-top: 30px;
+}
+
+.kolomeesls-text p {
+    padding-top: 20px;
 }
 
 
@@ -310,5 +313,36 @@
         padding-top: 50px;
     }
 
-    .
+    .aboutsls {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .aboutsls-text {
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .kolomeesls {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .kolomeesls-text {
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        order: 2;
+    }
+
+
 }
+
+@media(max-width:768px) {}
