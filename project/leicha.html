@@ -81,6 +81,52 @@
         max-width: 1050px;
         margin: 0 auto;
     }
+
+    .restaurant h3 {
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .restaurant .line-under-title {
+        background-color: #1e1e1e;
+        margin: 20px auto;
+        align-items: center;
+    }
+
+    .restaurant h4 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .recommend-restaurant {
+        background-image: url("img/kwong4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 300px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+
+    .operationtime {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        color: #f5f5dc;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .operationtime h6 {
+        margin: 0;
+    }
 </style>
 
 
@@ -165,10 +211,19 @@
             <div class="restaurant">
                 <h3>Recommended Restaurant</h3>
                 <div class="line-under-title"></div>
-                <h4>Sin Lian Shin</h4>
+                <h4> Kwong Hup Cafe</h4>
             </div>
         </div>
     </div>
+
+    <div class="recommend-restaurant">
+        <div class="operationtime">
+            <i class="fa-regular fa-clock" style="color: #f5f5dc;"></i>
+            <h6>6AM-2PM (Daily)</h6>
+        </div>
+    </div>
+
+
 
 
 </body>
