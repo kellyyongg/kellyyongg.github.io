@@ -1,4 +1,4 @@
-<style>.container1 {
+.container1 {
     max-width: 1280px;
     margin: 0 auto;
     padding-left: 20px;
@@ -96,7 +96,7 @@
 }
 
 .recommend-restaurant {
-    background-image: url("img/swklaksa3.jpg");
+    background-image: url("../img/swklaksa3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -239,7 +239,7 @@
 }
 
 .recommend-restaurant2 {
-    background-image: url("img/choon1.jpg");
+    background-image: url("../img/choon1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -450,13 +450,4 @@
     .choonswklaksa-text {
         order: 2;
     }
-
-
-
-
-
-
-
 }
-
-</style>
