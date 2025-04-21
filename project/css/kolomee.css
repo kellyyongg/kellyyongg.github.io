@@ -55,10 +55,6 @@
     background-color: #1e1e1e;
     margin: 20px 0;
     align-items: left;
-}
-
-
-.history .line-under-title {
     margin-bottom: -120px;
 }
 
@@ -222,33 +218,39 @@
         margin: 20px auto;
     }
 
-    .history {
-        padding: 0 20px;
-        margin-top: 100px;
-    }
-
-
-
     .history-banner {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-items: center;
         align-items: center;
         text-align: center;
-        gap: 200px;
-        margin-top: 40px;
+        gap: 30px;
     }
 
-    .line-under-title {
-        margin: 10px auto;
-        width: 60px;
-        height: 4px;
+    .history h3 {
+        text-align: center;
     }
 
-    .history-text p {
-        padding-top: 20px;
-        margin: 0 auto;
-        max-width: 350px;
+    .history .line-under-title {
+        align-items: center;
+        margin: 20px auto;
     }
+
+    .history-image {
+        order: 1;
+    }
+
+    .history-text {
+        order: 2;
+    }
+
+
+
+
+
+
+
+
 
 
 
