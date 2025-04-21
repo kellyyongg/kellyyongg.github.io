@@ -133,6 +133,7 @@
     color: #F5F5DC;
     padding-left: 70px;
     padding-right: 70px;
+    max-width: 1200px;
 
 }
 
@@ -248,28 +249,30 @@
         margin-right: 0;
     }
 
-}
-
-
-@media (max-width: 768px) {
-
-    .intro-section p,
-    .intro-dish .text p {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .dish {
+    .group {
         flex-direction: column;
         align-items: center;
-
+        text-align: center;
+        gap: 40px;
     }
 
-    .intro-dish .dish {
+    .text {
+        max-width: 50%;
+        align-items: center;
+    }
+
+    .text h4,
+    .text p {
+        text-align: center;
+    }
+
+    .group .button {
+        align-self: center;
+    }
+
+    .group.reverse {
         flex-direction: column;
         align-items: center;
-        gap: 100px;
     }
-
 
 }
