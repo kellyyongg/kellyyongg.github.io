@@ -106,7 +106,7 @@
     position: relative;
 }
 
-.recommend-restaurant .operationtime {
+.operationtime {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -116,7 +116,7 @@
     gap: 8px;
 }
 
-.recommend-restaurant .operationtime h6 {
+.operationtime h6 {
     margin: 0;
 }
 
@@ -127,9 +127,9 @@
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 80px;
-    outline: none;
     padding-left: 50px;
     padding-right: 50px;
+    margin: auto;
 }
 
 .aboutsls {
@@ -150,7 +150,6 @@
 
 .aboutsls-text p {
     padding-top: 20px;
-
 }
 
 .kolomeesls {
@@ -177,12 +176,7 @@
 .reviews-section {
     background-color: #f5f5dc;
     padding: 0;
-    max-width: 1280px;
-    padding-left: 50px;
-    padding-right: 50px;
     text-align: center;
-    padding: 60px 20px;
-    max-width: 1200px;
     margin: auto;
 }
 
@@ -250,6 +244,61 @@
     color: #333;
 }
 
+.kafebujang {
+    margin-top: 80px;
+}
+
+.kafebujang h4 {
+    padding-bottom: 20px;
+}
+
+.restaurant2 {
+    background-image: url("../img/kafebujanglelang.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.kafebujang-banner {
+    background-color: #f5f5dc;
+    padding: 0;
+    max-width: 1280px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.kafebujang-banner h6 {
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
 .otherdish {
     text-align: center;
     background-color: #1e1e1e;
@@ -260,6 +309,8 @@
 .otherdish p {
     color: #F5F5DC;
 }
+
+
 
 @media(max-width:1090px) {
     .introduction {
