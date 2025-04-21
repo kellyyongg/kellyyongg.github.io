@@ -1,3 +1,8 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -115,32 +120,59 @@
     margin: 0;
 }
 
-.group {
+.about {
+    background-color: #f5f5dc;
+    padding: 0;
+    max-width: 1280px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 80px;
+    outline: none;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.aboutsls {
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
+    gap: 100px;
     justify-content: center;
-    margin-top: 40px;
-    padding: 0 20px;
+    align-items: center;
+    padding-top: 50px
 }
 
-.group.reverse {
-    flex-direction: row-reverse;
+.aboutsls-image h6 {
+    margin-bottom: 30px;
 }
 
-.group-image {
-    flex: 1 1 400px;
-    max-width: 500px;
-    text-align: left;
+.aboutsls-text {
+    max-width: 400px;
+    margin-top: 30px;
 }
 
-.text {
-    flex: 1;
+.aboutsls-text p {
+    padding-top: 20px;
+    max-width: 350px;
+}
+
+.kolomeesls {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 30%;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px
 }
+
+.kolomeesls-image h6 {
+    margin-bottom: 30px;
+
+}
+
+.kolomeesls-text {
+    max-width: 40%;
+    margin-top: 30px;
+}
+
+
 
 .reviews-section {
     text-align: center;
@@ -278,13 +310,5 @@
         padding-top: 50px;
     }
 
-
-
-
-
-
-
-
-
-
+    .
 }
