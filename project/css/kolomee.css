@@ -4,6 +4,7 @@
     padding-left: 20px;
     padding-right: 20px;
     background-color: #F5F5DC;
+    padding-bottom: 50px;
 }
 
 .kolomee h2 {
@@ -68,25 +69,35 @@
     margin: 0 auto;
 }
 
-.recommend-restaurant {
-    margin-top: 100px;
+.restaurant h3 {
     text-align: center;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 80px;
 }
 
-.recommend-restaurant h4 {
-    padding-bottom: 20px;
-}
-
-.recommend-restaurant .line-under-title {
+.restaurant .line-under-title {
     background-color: #1e1e1e;
     margin: 20px auto;
+    align-items: center;
 }
 
-.recommend-restaurant img {
-    width: 100%;
+.restaurant h4 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.recommend-restaurant {
+    background-image: url("../img/restaurantsinlianshin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 1280px;
 }
 
 .group {
