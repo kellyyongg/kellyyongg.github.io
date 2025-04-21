@@ -39,9 +39,12 @@
 }
 
 .history {
+    display: flex;
+    flex-direction: column;
     padding: 0 100px;
     margin-top: 100px;
 }
+
 
 .history-banner {
     display: flex;
@@ -49,6 +52,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .history .line-under-title {
@@ -244,6 +248,9 @@
         order: 2;
     }
 
+    .history-text p {
+        padding-top: 50px;
+    }
 
 
 
