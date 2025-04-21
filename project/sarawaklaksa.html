@@ -285,6 +285,9 @@
         padding-left: 50px;
         padding-right: 50px;
         margin: auto;
+    }
+
+    .about-choon {
         display: flex;
         gap: 100px;
         justify-content: center;
@@ -292,19 +295,42 @@
         padding-top: 50px;
     }
 
-    .choon-banner h6 {
-        padding-bottom: 30px;
-        padding-top: 50px;
+    .about-choon-image h6 {
+        margin-bottom: 30px;
     }
 
-    .banner-text {
+    .about-choon-text {
+        margin-top: 30px;
+        max-width: 40%;
+    }
+
+    .about-choon-text p {
+        padding-top: 20px;
+    }
+
+    .choonswklaksa {
         display: flex;
-        flex-direction: column;
-        gap: 20px;
+        gap: 100px;
         justify-content: center;
         align-items: center;
         padding-top: 50px;
     }
+
+    .choonswklaksa-image h6 {
+        margin-bottom: 30px;
+    }
+
+    .choonswklaksa-text {
+        max-width: 40%;
+        margin-top: 30px;
+    }
+
+    .choonswklaksa-text p {
+        padding-top: 20px;
+    }
+
+
+
 
 
 
@@ -401,6 +427,45 @@
             margin-right: auto;
             justify-content: center;
         }
+
+        .about-choon {
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .about-choon-text {
+            max-width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .choonswklaksa {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .choonswklaksa-text {
+            max-width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .choonswklaksa-image {
+            order: 1;
+        }
+
+        .choonswklaksa-text {
+            order: 2;
+        }
+
+
 
 
 
@@ -605,17 +670,42 @@
     </div>
 
     <div class="choon-banner">
-        <div class="banner-image">
-            <h6>About Choon Hui Cafe</h6>
-            <img src="img/choon2.jpg">
-            <img src="img/choon3.jpg">
+        <div class="about-choon">
+            <div class="about-choon-image">
+                <h6>About Choon Hui Cafe</h6>
+                <img src="img/choon2.jpg">
+                <img src="img/choon3.jpg">
+            </div>
+            <div class="about-choon-text">
+                <p>This bustling café off Jalan Ban Hock is a favourite breakfast spot of a certain Anthony Bourdain.
+                </p>
+                <p>The sensei loves his Laksa, and the Laksa here at Choon Hui packs a proper punch, bursting to the
+                    brim
+                    with local peppercorns & spices. </p>
+            </div>
         </div>
-        <div class="banner-text">
-            <p>This bustling café off Jalan Ban Hock is a favourite breakfast spot of a certain Anthony Bourdain. </p>
-            <p>The sensei loves his Laksa, and the Laksa here at Choon Hui packs a proper punch, bursting to the brim
-                with local peppercorns & spices. </p>
+
+        <div class="choonswklaksa">
+            <div class="choonswklaksa-text">
+                <p>There’s a choice of 3 sizes here – S/M/L for RM6/8/10 respectively. </p>
+                <p>The large offering comes with 4 king prawns, poached chicken, shredded omelette and a generous
+                    helping of noodles and beansprouts. A great choice if you like your Laksas more full-on.
+                </p>
+            </div>
+
+            <div class="choonswklaksa-image">
+                <h6>Sarawak Laksa at Choon Hui Cafe</h6>
+                <img src="img/choon4.jpg">
+                <img src="img/choon5.jpg">
+                <img src="img/choon6.png">
+            </div>
         </div>
+
+
+
     </div>
+
+
 
 
 
