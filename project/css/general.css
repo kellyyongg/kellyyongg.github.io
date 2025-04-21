@@ -318,6 +318,18 @@ p {
     .footer .menu {
         flex-direction: column;
         align-items: center;
+        gap: 50px;
+    }
+
+    .footer-menu-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-submenu {
+        flex-direction: column;
+        align-items: center;
         gap: 20px;
     }
 
