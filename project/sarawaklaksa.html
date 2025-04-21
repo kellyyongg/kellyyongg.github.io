@@ -53,12 +53,26 @@
         align-items: center;
     }
 
+    .history-title {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .history-title .line-under-title {
+        background-color: #1e1e1e;
+        margin: 20px auto;
+    }
+
     .history {
         display: flex;
         flex-direction: row;
         padding: 0 100px;
-        margin-top: 100px;
         gap: 100px;
+
     }
 
     .history-image {
@@ -66,21 +80,11 @@
         gap: 200px;
         align-items: center;
         justify-content: center;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    .history .line-under-title {
-        background-color: #1e1e1e;
-        margin: 20px 0;
-        align-items: left;
     }
 
     .history-text {
         display: flex;
         flex-direction: column;
-        margin-top: 40px;
-        margin-bottom: 40px;
     }
 
     .history-text p {
@@ -122,6 +126,42 @@
         .intro-text .line-under-title {
             align-items: center;
             margin: 20px auto;
+        }
+
+        .history {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+        }
+
+        .history-title {
+            order: 1;
+            width: 100%;
+            text-align: center;
+        }
+
+        .history-title h3 {
+            text-align: center;
+        }
+
+        .history-title .line-under-title {
+            align-items: center;
+            margin: 20px auto;
+        }
+
+        .history-image {
+            order: 2;
+        }
+
+        .history-text {
+            order: 3;
+        }
+
+        .history-text p {
+            padding-top: 50px;
         }
     }
 </style>
@@ -181,13 +221,16 @@
 
         </div>
 
+        <div class="history-title">
+            <h3>History</h3>
+            <div class="line-under-title"></div>
+        </div>
         <div class="history">
             <div class="history-image">
                 <img src="img/swklaksa2.png">
             </div>
+
             <div class="history-text">
-                <h3>History</h3>
-                <div class="line-under-title"></div>
                 <p>Sarawak Laksa dates back to the early 20th century, believed to have been introduced by Chinese
                     immigrants who adapted local ingredients into their traditional laksa recipes.</p>
                 <p>The dish gained popularity in the 1940s when a local vendor refined its signature spice paste,
@@ -195,10 +238,11 @@
                     beloved staple, earning global recognition for its unique taste and rich cultural heritage.</p>
             </div>
         </div>
+    </div>
 
-        <div class="recommendrestaurant">
+    <div class="recommendrestaurant">
 
-        </div>
+    </div>
     </div>
 
 </body>
