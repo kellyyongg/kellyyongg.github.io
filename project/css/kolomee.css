@@ -97,7 +97,22 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 1280px;
+    width: 100%;
+    position: relative;
+}
+
+.recommend-restaurant .operationtime {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #f5f5dc;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.recommend-restaurant .operationtime h6 {
+    margin: 0;
 }
 
 .group {
