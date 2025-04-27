@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.wrapper {
+    background-color: #F5F5DC;
+}
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
