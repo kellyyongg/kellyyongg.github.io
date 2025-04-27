@@ -225,10 +225,14 @@
 
     .banner .line-under-title {
         background-color: #1e1e1e;
-        margin: 20px 0;
+        margin: 20px auto;
         align-items: center;
         text-align: center;
         justify-items: center;
+    }
+
+    .banner p {
+        text-align: center;
     }
 
     .banner-contents-first,

@@ -130,7 +130,6 @@
 .intro-dish .dish img {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
     margin-bottom: 10px;
     position: absolute;
     top: -70px;
@@ -146,7 +145,6 @@
 
 .intro-dish .dish p {
     margin: 10px 0;
-    font-size: 14px;
     color: #F5F5DC;
 }
 
