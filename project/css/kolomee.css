@@ -44,6 +44,13 @@
     align-items: center;
 }
 
+.introduction-image img {
+    display: block;
+    width: 650px;
+
+
+}
+
 .history {
     display: flex;
     flex-direction: column;
@@ -323,6 +330,11 @@
         margin-right: 20px;
     }
 
+    .introduction-image img {
+        height: auto;
+        max-width: 500px;
+    }
+
     .introduction-text p {
         max-width: 80%;
         margin: 0 auto;
@@ -408,4 +420,24 @@
     }
 }
 
-@media(max-width:768px) {}
+@media(max-width:768px) {
+    .introduction-image img {
+        width: 100%;
+    }
+
+    .history-image img {
+        width: 100%;
+    }
+
+    .aboutsls-image img {
+        width: 100%;
+    }
+
+    .kolomeesls-image img {
+        width: 100%;
+    }
+
+    .kafebujang-banner img {
+        width: 100%;
+    }
+}
