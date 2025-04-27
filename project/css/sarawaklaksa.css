@@ -455,3 +455,29 @@
         order: 2;
     }
 }
+
+@media(max-width:768px) {
+    .intro-image img {
+        width: 100%;
+    }
+
+    .history-image img {
+        width: 100%;
+    }
+
+    .aboutpoh-image img {
+        width: 100%;
+    }
+
+    .swklaksa5 img {
+        width: 100%;
+    }
+
+    .about-choon-image img {
+        width: 100%;
+    }
+
+    .choonswklaksa-image img {
+        width: 100%;
+    }
+}
