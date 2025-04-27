@@ -140,6 +140,7 @@
     padding-left: 50px;
     padding-right: 50px;
     margin: auto;
+    position: relative;
 }
 
 .aboutpoh {
@@ -147,7 +148,8 @@
     gap: 100px;
     justify-content: center;
     align-items: center;
-    padding-top: 50px
+    padding-top: 50px;
+    position: relative;
 }
 
 .aboutpoh-image h6 {
@@ -163,18 +165,23 @@
 }
 
 .swklaksa5 {
-    display: flex;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: 100px;
+    position: absolute;
+    bottom: -200px;
+    right: 0;
+    align-self: flex-end;
+}
+
+.swklaksa5 img {
+    width: 100%;
+    height: auto;
 }
 
 .reviews-section {
     background-color: #f5f5dc;
-    padding: 0;
+    padding-top: 300px;
     text-align: center;
     margin: auto;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .reviews-section h3 {
@@ -286,9 +293,20 @@
     margin-bottom: 30px;
 }
 
+.about-choon-image {
+    position: relative;
+}
+
+.about-choon-image>div img {
+    position: absolute;
+    top: 55px;
+    right: -100px;
+}
+
 .about-choon-text {
     margin-top: 30px;
     max-width: 40%;
+    margin-left: 60px;
 }
 
 .about-choon-text p {
@@ -298,13 +316,41 @@
 .choonswklaksa {
     display: flex;
     gap: 100px;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     padding-top: 50px;
 }
 
 .choonswklaksa-image h6 {
     margin-bottom: 30px;
+    text-align: right;
+}
+
+.choonswklaksa-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.choonswklaksa-image-images {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.choonswklaksa-image-images .choon5 {
+    position: absolute;
+    bottom: -100px;
+    right: 100px;
+    transform: translateX(-50%);
+}
+
+.choonswklaksa-image-images .choon6 {
+    position: absolute;
+    bottom: -300px;
+    right: 300px;
+    transform: translateX(-50%);
 }
 
 .choonswklaksa-text {
@@ -409,12 +455,18 @@
     }
 
     .swklaksa5 {
-        display: flex;
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin: 0 auto;
+        align-self: center;
     }
+
+    .reviews-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
 
     .about-choon {
         flex-direction: column;
@@ -430,6 +482,16 @@
         text-align: center;
     }
 
+    .about-choon-image {
+        position: relative;
+    }
+
+    .about-choon-image>div img {
+        position: absolute;
+        top: 55px;
+        right: 0;
+    }
+
     .choonswklaksa {
         display: flex;
         flex-direction: column;
@@ -443,15 +505,35 @@
         max-width: 80%;
         margin: 0 auto;
         text-align: center;
+        order: 2;
     }
 
     .choonswklaksa-image {
         order: 1;
+        align-items: center;
+
     }
 
-    .choonswklaksa-text {
-        order: 2;
+    .choonswklaksa-image h6 {
+        text-align: center;
     }
+
+    .choonswklaksa-image-images {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .choonswklaksa-image-images .choon5,
+    .choonswklaksa-image-images .choon6 {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+
+
+
+
 }
 
 @media(max-width:768px) {
@@ -469,10 +551,16 @@
 
     .swklaksa5 img {
         width: 100%;
+        align-self: center;
     }
+
 
     .about-choon-image img {
         width: 100%;
+    }
+
+    .about-choon-image>div img {
+        width: 50%;
     }
 
     .choonswklaksa-image img {
