@@ -328,6 +328,7 @@
         align-items: center;
         text-align: center;
         width: 100%;
+        position: relative;
     }
 
     .about {
@@ -363,6 +364,42 @@
         margin-bottom: 30px;
         text-align: right;
     }
+
+    .redwinebanner {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+
+    .section1,
+    .section2 {
+        display: flex;
+        align-items: center;
+        gap: 120px;
+
+    }
+
+    .section2 {
+        position: relative;
+        top: -150px;
+        left: 250px;
+
+    }
+
+    .section1-text {
+        width: 50%;
+    }
+
+    .section2-text {
+        width: 30%;
+    }
+
+
+
+
 
 
 
@@ -522,6 +559,20 @@
             text-align: center;
         }
 
+        .section1,
+        .section2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 80px;
+            gap: 30px;
+        }
+
+        .section2 {
+            position: static;
+        }
     }
 
     @media(max-width:768px) {
@@ -548,6 +599,12 @@
         .aboutchoon-image img {
             width: 100%;
         }
+
+        .section1-image img,
+        .section2-image img {
+            width: 100%;
+        }
+
 
 
 
@@ -801,21 +858,23 @@
         <div class="redwinebanner">
             <div class="section1">
                 <div class="section1-image">
-
+                    <img src="img/choonthian3.jpg">
                 </div>
 
                 <div class="section1-text">
-
+                    <p>Choon Thian Food Centre’s Red Wine Mee Sua is a rich and aromatic Foochow dish, featuring a deep
+                        red homemade red rice wine broth with a balanced sweet, tangy, and mildly alcoholic taste. </p>
                 </div>
             </div>
 
             <div class="section2">
                 <div class="section2-image">
-
+                    <img src="img/choonthian4.jpg">
                 </div>
 
                 <div class="section2-text">
-
+                    <p>Infused with ginger for warmth, it’s served with tender braised chicken that absorbs the
+                        flavorful broth.</p>
                 </div>
             </div>
         </div>
