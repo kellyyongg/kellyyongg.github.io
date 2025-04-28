@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Sarawak, Explore More Sarawak Food, </title>
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/sarawaklaksa.css">
+    <link rel="stylesheet" href="css/meesua.css">
     <script src="https://kit.fontawesome.com/0b48aa0eff.js" crossorigin="anonymous"></script>
 
 </head>
@@ -94,6 +94,155 @@
         max-width: 1050px;
         margin: 0 auto;
     }
+
+    .homemade {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    .section-text1,
+    .section-text2 {
+        flex-basis: 30%;
+    }
+
+    .section-text p {
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .homemade .section-image {
+        flex-basis: 40%;
+    }
+
+    .section-image h6 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    @media(max-width:1090px) {
+        .intro {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+            gap: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .intro-text {
+            max-width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            order: 2;
+        }
+
+        .intro-image {
+            order: 1;
+        }
+
+        .intro-text .line-under-title {
+            align-items: center;
+            margin: 20px auto;
+        }
+
+        .history {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+        }
+
+        .history-title {
+            order: 1;
+            width: 100%;
+            text-align: center;
+        }
+
+        .history-title h3 {
+            text-align: center;
+        }
+
+        .history-title .line-under-title {
+            align-items: center;
+            margin: 20px auto;
+        }
+
+        .history-image {
+            order: 2;
+        }
+
+        .history-text {
+            order: 3;
+        }
+
+        .history-text p {
+            padding-top: 50px;
+        }
+
+        .homemade {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section-text1 {
+            order: 2;
+        }
+
+        .section-text1 p,
+        .section-text2 p {
+            text-align: center;
+            padding-top: 50px;
+
+        }
+
+        .section-image {
+            flex-basis: auto;
+            width: 100%;
+            text-align: center;
+            order: 1;
+        }
+
+        .section-text2 {
+            order: 3;
+        }
+
+        .section-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .section-image h6 {
+            margin-top: 20px;
+        }
+
+
+
+
+
+    }
+
+    @media(max-width:768px) {
+        .intro-image img {
+            width: 100%;
+        }
+
+        .history-image img {
+            width: 100%;
+        }
+
+        .section-image img {
+            width: 80%;
+        }
+
+    }
 </style>
 
 
@@ -149,7 +298,7 @@
                         celebrations and special occasions.</p>
                 </div>
                 <div class="intro-image">
-                    <img src="img/mee sua circle.png">
+                    <img src="img/mee1.png">
                 </div>
 
             </div>
@@ -160,26 +309,43 @@
             </div>
             <div class="history">
                 <div class="history-image">
-                    <img src="img/mee">
+                    <img src="img/mee2.png">
                 </div>
 
                 <div class="history-text">
-                    <p>Sarawak Laksa dates back to the early 20th century, believed to have been introduced by
-                        Chinese
-                        immigrants who adapted local ingredients into their traditional laksa recipes.</p>
-                    <p>The dish gained popularity in the 1940s when a local vendor refined its signature spice
-                        paste,
-                        blending Chinese and Malay flavors with belacan and coconut milk. Over time, Sarawak Laksa
-                        became a
-                        beloved staple, earning global recognition for its unique taste and rich cultural heritage.
+                    <p>Mee Sua, or longevity noodles, originates from the Foochow (Fuzhou) community in China and was
+                        brought to Sarawak by early immigrants. Traditionally eaten during birthdays and special
+                        occasions, the dish symbolizes long life and good fortune.
+                    </p>
+                    <p>Over time, Sarawak’s Foochow community adapted Mee Sua, often serving it in a rich chicken or red
+                        rice wine broth, making it a beloved comfort food.
                     </p>
                 </div>
+            </div>
+
+            <div class="homemade">
+                <div class="section-text1">
+                    <p>Homemade red rice wine is a key ingredient in Foochow cuisine, especially in Mee Sua. Made from
+                        fermented red yeast rice and glutinous rice, it has a deep red hue and a mildly sweet, aromatic
+                        flavor.</p>
+                </div>
+
+                <div class="section-image">
+                    <h6>Homemade Red Wine</h6>
+                    <img src="img/mee3.png">
+                </div>
+
+                <div class="section-text2">
+                    <p>Traditionally brewed at home, it is used in cooking and as a health tonic, believed to promote
+                        warmth and vitality.</p>
+                </div>
+
             </div>
 
             <div class="recommendrestaurant">
                 <h3>Recommended Restaurant</h3>
                 <div class="line-under-title"></div>
-                <h4>Poh Lam Laksa</h4>
+                <h4>Mee Kwong Cafe</h4>
             </div>
         </div>
     </div>
