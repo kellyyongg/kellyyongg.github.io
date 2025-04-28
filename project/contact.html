@@ -76,6 +76,30 @@
         align-items: center;
         gap: 20px;
     }
+
+    .yourdetails form {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .yourdetails form div {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+    }
+
+    .yourdetails form input {
+        padding: 15px;
+        width: 100%;
+        background-color: #D9D9D9;
+        border: none;
+        color: #1e1e1e;
+        color: rgba(30, 30, 30, 0.6);
+    }
 </style>
 
 <body>
@@ -143,19 +167,37 @@
             <div class="yourdetails">
                 <h4>Your Details</h4>
                 <form action="/action_page.php">
-                    <label for="name">NAME *</label><br>
-                    <input type="text" id="name" name="name" value="Your Name"><br>
-                    <label for="email">EMAIL ADDRESS *</label><br>
-                    <input type="text" id="email" name="email" value="Your Email"><br><br>
+                    <div>
+                        <label for="name">NAME *</label><br>
+                        <input type="text" id="name" name="name" value="Your Name"><br>
+                    </div>
+
+                    <div>
+                        <label for="email">EMAIL ADDRESS *</label><br>
+                        <input type="text" id="email" name="email" value="Your Email"><br><br>
+                    </div>
+
+                    <label for="comments">COMMENTS / QUESTIONS *</label>
+                    <textarea id="comments" name="comments" rows="6" cols="50">Write your comments</textarea>
+                    <br>
                 </form>
+                <a href="#" class="button-fill">Contact Me</a>
+
 
             </div>
+
         </div>
 
 
-
-
     </div>
+
+
+
+
+
+
+
+
 
 
 
