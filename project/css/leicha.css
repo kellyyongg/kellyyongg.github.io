@@ -195,7 +195,7 @@
 }
 
 .leichakwong-text p {
-    padding-top: 20px;
+    padding-top: 100px;
 }
 
 .reviews-section {
@@ -280,7 +280,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 440px;
+    min-height: 1000px;
     margin: 0 auto;
     padding: 0;
     display: flex;
@@ -434,6 +434,11 @@
         order: 2;
     }
 
+    .leichakwong-text p {
+        padding-top: 20px;
+    }
+
+
     .leichakwong-image {
         max-width: 100%;
         text-align: center;
@@ -475,4 +480,24 @@
         margin: 0 auto;
         text-align: center;
     }
+}
+
+@media(max-width:768px) {
+    .introduction-image img {
+        width: 100%;
+    }
+
+    .history-image img {
+        width: 100%;
+    }
+
+    .kwong6 img {
+        width: 100%;
+    }
+
+    .kwong7 img {
+        width: 100%;
+    }
+
+
 }
