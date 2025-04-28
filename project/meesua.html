@@ -108,7 +108,8 @@
         flex-basis: 30%;
     }
 
-    .section-text p {
+    .section-text1 p,
+    .section-text2 p {
         margin-left: 20px;
         margin-right: 20px;
 
@@ -138,6 +139,37 @@
         margin: 20px auto;
         align-items: center;
 
+    }
+
+    .recommend-restaurant {
+        background-image: url("img/mee4.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 800px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        position: relative;
+    }
+
+    .operationtime {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        color: #f5f5dc;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .operationtime h6 {
+        margin: 0;
     }
 
     @media(max-width:1090px) {
@@ -366,6 +398,14 @@
             </div>
         </div>
     </div>
+
+    <div class="recommend-restaurant">
+        <div class="operationtime">
+            <i class="fa-regular fa-clock" style="color: #f5f5dc;"></i>
+            <h6>7AM-12PM (Daily, Closed on Tuesday)</h6>
+        </div>
+    </div>
+
 
 
 </body>
