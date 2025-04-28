@@ -46,6 +46,36 @@
         background-color: #1e1e1e;
         margin: 20px auto 20px;
     }
+
+    .contactdetails h5 {
+        color: #1e1e1e;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .getintouch,
+    .yourdetails {
+        width: 40%;
+    }
+
+    .getintouch p {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
 </style>
 
 <body>
@@ -90,12 +120,38 @@
             <div class="contactdetails">
                 <h3>Contact</h3>
                 <div class="line-under-title"></div>
+                <h5>We’d Love to Hear Your Thoughts!</h5>
             </div>
         </div>
 
-        <div>
+        <div class="banner">
+            <div class="getintouch">
+                <h4>Get in Touch</h4>
+                <p>Have questions or want to learn more about Sarawak Chinese food? Feel free to reach out!</p>
 
+                <div class="contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+601110878258</p>
+                </div>
+
+                <div class="contact">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>+601110878258</p>
+                </div>
+
+            </div>
+            <div class="yourdetails">
+                <h4>Your Details</h4>
+                <form action="/action_page.php">
+                    <label for="name">NAME *</label><br>
+                    <input type="text" id="name" name="name" value="Your Name"><br>
+                    <label for="email">EMAIL ADDRESS *</label><br>
+                    <input type="text" id="email" name="email" value="Your Email"><br><br>
+                </form>
+
+            </div>
         </div>
+
 
 
 
