@@ -238,6 +238,82 @@
         padding-top: 20px;
     }
 
+    .reviews-section {
+        background-color: #f5f5dc;
+        padding: 0;
+        text-align: center;
+        margin: auto;
+        padding-bottom: 50px;
+
+    }
+
+    .reviews-section h3 {
+        color: #1e1e1e;
+    }
+
+    .reviews-section .line-under-title {
+        background-color: #1e1e1e;
+        margin: 20px auto;
+    }
+
+    .review-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .card {
+        background-color: #D9D9D9;
+        border-radius: 20px;
+        width: 280px;
+        padding: 30px 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        position: relative;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin: 0 auto 15px;
+        font-weight: bold;
+        font-size: 22px;
+        color: #D9D9D9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .profile-photo img {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .reviewer-name {
+        margin-bottom: 10px;
+        margin-top: -60px;
+
+    }
+
+    .stars {
+        margin-bottom: 15px;
+    }
+
+    .review-text {
+        font-size: 14px;
+        color: #333;
+    }
+
+    .choonthian {
+        margin-top: 80px;
+    }
 
     @media(max-width:1090px) {
         .intro {
@@ -543,6 +619,80 @@
         </div>
     </div>
 
+    <div class="reviews-section">
+        <h3>Reviews</h3>
+        <div class="line-under-title"></div>
+
+        <div class="review-cards">
+
+            <div class="card">
+                <div class="profile-photo">
+                    <img src="img/mee7.png">
+                </div>
+                <div class="reviewer-name">
+                    <h6>Yalun Huang</h6>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star" style="color: #EBC603;"></i>
+                    <i class="fa-solid fa-star" style="color: #EBC603;"></i>
+                    <i class="fa-solid fa-star" style="color: #EBC603;"></i>
+                    <i class="fa-solid fa-star" style="color: #EBC603;"></i>
+                    <i class="fa-solid fa-star" style="color: #EBC603;"></i>
+                </div>
+
+                <div class="review-text">
+                    <p>Very delicious chicken soup mee sua in Kuching. I ever ate this dish at other place but did not
+                        find this good taste like Mee Kwong Cafe chicken soup mee sua. Food price is reasonable.</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="profile-photo">
+                    <img src="img/a.png">
+                </div>
+                <div class="reviewer-name">
+                    <h6>Kelvin Chan</h6>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star" style="color: #EBC603;"></i>
+                    <i class="fa-solid fa-star" style="color: #EBC603;"></i>
+                    <i class="fa-solid fa-star" style="color: #EBC603;"></i>
+                    <i class="fa-solid fa-star" style="color: #EBC603;"></i>
+                    <i class="fa-regular fa-star" style="color: #EBC603;"></i>
+                </div>
+                <div class="review-text">
+                    <p>Highly recommended to try the Mee Sua. A good portion with chicken drumstick and mushrooms.
+                        Amazing broth with a good amount of red wine.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="profile-photo">
+                    <img src="img/p.png">
+                </div>
+                <div class="reviewer-name">
+                    <h6>Muihua Gu</h6>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star" style="color: #EBC603;"></i>
+                    <i class="fa-solid fa-star" style="color: #EBC603;"></i>
+                    <i class="fa-solid fa-star" style="color: #EBC603;"></i>
+                    <i class="fa-solid fa-star" style="color: #EBC603;"></i>
+                    <i class="fa-regular fa-star" style="color: #EBC603;"></i>
+                </div>
+                <div class="review-text">
+                    <p>Many Delicious dishes for breakfast.
+                        I love Mee Sua. </p>
+                </div>
+            </div>
+        </div>
+        <div class="choonthian">
+            <h4>Choon Thian Food Centre</h4>
+        </div>
+    </div>
 
 
 
