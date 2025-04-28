@@ -79,6 +79,11 @@ p {
     gap: 60px;
 }
 
+.menu-toggle,
+.close-btn {
+    display: none;
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -287,12 +292,6 @@ p {
         padding: 30px;
     }
 
-    .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
     .footer .menu {
         gap: 40px;
     }
@@ -337,11 +336,81 @@ p {
         padding: 20px;
     }
 
+
     .menu {
-        flex-wrap: wrap;
+        flex-direction: column;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #EBC603;
         justify-content: center;
-        gap: 20px 25px;
+        align-items: center;
+        z-index: 1000;
     }
+
+    .menu.active {
+        display: flex;
+    }
+
+
+    .menu-item>a {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 32px;
+        color: black;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1100;
+        cursor: pointer;
+    }
+
+    #menu-checkbox:checked~.menu {
+        display: flex;
+    }
+
+    #menu-checkbox:checked+.menu-toggle {
+        display: none;
+    }
+
+
+    .submenu {
+        display: block;
+        position: static;
+        /* from absolute */
+    }
+
+    .close-btn {
+        display: none;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        font-size: 32px;
+        color: black;
+        z-index: 1100;
+        cursor: pointer;
+    }
+
+    #menu-checkbox:checked~.menu .close-btn {
+        display: block;
+    }
+
+    .submenu {
+        display: block;
+        position: static;
+    }
+
+
+
+
+
+
 
     .footer .menu {
         flex-direction: column;
