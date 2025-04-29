@@ -21,9 +21,12 @@
                     <img src="img/logo.png" alt="Logo" width="70" height="70">
                 </a>
             </div>
-            <div class="menu">
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <div class="menu" id="mobile-menu">
+
                 <h6><a href="sarawakchinesefood.html">Sarawak Chinese Food</a></h6>
                 <div class="menu-item">
+
                     <h6><a href="#">Signature Dish<i class="fa-solid fa-chevron-down"></i></a></h6>
                     <div class="submenu">
                         <h6><a href="kolomee.html">Kolo Mee</a></h6>
@@ -104,7 +107,7 @@
                 <img src="img/logo.png" alt="Logo" width="70" height="70">
             </a>
         </div>
-        <div class="menu">
+        <div class="footermenu">
             <h6><a href="sarawakchinesefood.html">Sarawak Chinese Food</a></h6>
 
             <div class="footer-menu-section">
@@ -162,7 +165,21 @@
         </div>
     </div>
 
+    <script>
+        const toggleButton = document.getElementById("menu-toggle");
+        const menu = document.getElementById("mobile-menu");
 
+        toggleButton.addEventListener("click", () => {
+            menu.classList.toggle("active");
+
+            // Change icon
+            if (menu.classList.contains("active")) {
+                toggleButton.innerHTML = "&times;" // × (cross)
+            } else {
+                toggleButton.innerHTML = "&#9776;" // ☰ (hamburger)
+            }
+        });
+    </script>
 
 
 
