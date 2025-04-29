@@ -223,6 +223,13 @@ p {
 .footermenu a {
     color: black;
     text-decoration: none;
+    transition: font-weight 0.2s ease;
+}
+
+.footermenu a:hover {
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
 }
 
 .footer-menu-section {
@@ -233,6 +240,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
 }
 
 .footer-submenu {
