@@ -1,6 +1,7 @@
 .contactbanner {
     background-image: url("../img/contact.jpg");
     background-size: cover;
+    background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,6 +59,19 @@
     padding-bottom: 30px;
 }
 
+.getintouch .contact+.contact {
+    margin-top: 16px;
+}
+
+.getintouch a {
+    color: black;
+    text-decoration: none;
+}
+
+.getintouch a:hover {
+    text-decoration: underline;
+}
+
 .contact {
     display: flex;
     align-items: center;
@@ -88,6 +102,78 @@
     color: rgba(30, 30, 30, 0.6);
 }
 
+label {
+    min-height: 35px;
+}
+
+.yourdetails form textarea {
+    padding: 15px;
+    width: 100%;
+    background-color: #D9D9D9;
+    border: none;
+    color: #1e1e1e;
+    color: rgba(30, 30, 30, 0.6);
+}
+
+
+
+
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: none;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating>.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating>label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating>input:checked~label,
+/* show gold star when clicked */
+.rating:not(:checked)>label:hover,
+/* hover current star */
+.rating:not(:checked)>label:hover~label {
+    color: #FFD700;
+}
+
+/* hover previous stars in list */
+
+.rating>input:checked~label,
+.rating>label:hover,
+.rating>label:hover~label {
+    color: #FFD700;
+}
+
+.button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
 @media(max-width:1000px) {
     .banner {
         flex-direction: column;
@@ -103,4 +189,16 @@
         justify-content: center;
     }
 
+    .rating {
+        justify-content: center;
+    }
+
+    .comments {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .button {
+        justify-content: center;
+    }
 }

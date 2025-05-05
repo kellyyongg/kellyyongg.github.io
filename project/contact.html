@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/contact.css">
     <script src="https://kit.fontawesome.com/0b48aa0eff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
@@ -71,12 +72,12 @@
 
                     <div class="contact">
                         <i class="fa-solid fa-phone"></i>
-                        <p>+601110878258</p>
+                        <a href="tel:+601110878258">+60 111-087 8258</a>
                     </div>
 
                     <div class="contact">
                         <i class="fa-regular fa-envelope"></i>
-                        <p>+601110878258</p>
+                        <a href="mailto:kelly6656@gmail.com">kelly6656@gmail.com</a>
                     </div>
 
                 </div>
@@ -85,19 +86,43 @@
                     <form action="/action_page.php">
                         <div>
                             <label for="name">NAME *</label><br>
-                            <input type="text" id="name" name="name" value="Your Name"><br>
+                            <input type="text" id="name" name="name" placeholder="Your Name"><br>
                         </div>
 
                         <div>
                             <label for="email">EMAIL ADDRESS *</label><br>
-                            <input type="text" id="email" name="email" value="Your Email"><br><br>
+                            <input type="text" id="email" name="email" placeholder="Your Email"><br><br>
+                        </div>
+
+                        <div style="width: 100%;">
+                            <label for="rating">OVERALL RATING *</label><br>
+                            <fieldset class="rating">
+                                <input type="radio" id="star1" name="rating" value="1" />
+                                <label for="star1" title="1 star"></label>
+
+                                <input type="radio" id="star2" name="rating" value="2" />
+                                <label for="star2" title="2 stars"></label>
+
+                                <input type="radio" id="star3" name="rating" value="3" />
+                                <label for="star3" title="3 stars"></label>
+
+                                <input type="radio" id="star4" name="rating" value="4" />
+                                <label for="star4" title="4 stars"></label>
+
+                                <input type="radio" id="star5" name="rating" value="5" />
+                                <label for="star5" title="5 stars"></label>
+                            </fieldset>
                         </div>
 
                         <label for="comments">COMMENTS / QUESTIONS *</label>
-                        <textarea id="comments" name="comments" rows="6" cols="50">Write your comments</textarea>
+                        <textarea id="comments" name="comments" rows="6" cols="50"
+                            placeholder="Write your comments"></textarea>
                         <br>
                     </form>
-                    <a href="#" class="button-fill">Contact Me</a>
+
+                    <div class="button">
+                        <button class="button-fill">Contact Me</button>
+                    </div>
                 </div>
             </div>
         </div>
