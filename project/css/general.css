@@ -89,7 +89,7 @@ p {
 
 .menu {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     padding: 0 10px;
     gap: 30px;
@@ -132,6 +132,10 @@ p {
 
 .menu-item:hover .submenu {
     display: block;
+}
+
+.menu-item a i {
+    margin-left: 8px;
 }
 
 .button {
@@ -201,8 +205,6 @@ p {
     text-align: center;
     padding: 20px 0;
     width: 100%;
-
-
 }
 
 .footer .logo {
@@ -372,6 +374,7 @@ p {
         align-items: center;
         z-index: 1000;
         position: fixed;
+        gap: 100px;
     }
 
     .menu.active {
