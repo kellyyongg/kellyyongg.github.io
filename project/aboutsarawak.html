@@ -110,9 +110,67 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            gap: 10px;
+            padding-bottom: 50px;
+        }
+
+        .iban h3 {
+            text-align: right;
+            padding-top: 50px;
+
+        }
+
+        .iban .line-under-title {
+            background-color: #1e1e1e;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .iban-text {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
             gap: 100px;
             padding-bottom: 50px;
         }
+
+        .iban-text .text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            width: 50%;
+        }
+
+        .iban-text .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .iban-image {
+            width: 40%;
+        }
+
+
+        .iban-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+
+
+
+
+
+
+
+
+
 
 
         @media(max-width:1090px) {
@@ -230,17 +288,54 @@
             </div>
 
         </div>
-    </div>
 
-    <div class="population">
-        <h3>Population Size %</h3>
-        <div class="line-under-title"></div>
 
-        <div class="population-image">
-            <img src="img/abtswkchart.png">
-            <img src="img/abtswkchartdata.jpg">
+        <div class="population">
+            <h3>Population Size %</h3>
+            <div class="line-under-title"></div>
+
+            <div class="population-image">
+                <img src="img/abtswkchart.png">
+                <img src="img/abtswkchartdata.jpg">
+            </div>
         </div>
-    </div>
+
+        <div class="container">
+
+            <div class="iban">
+                <h3>Iban</h3>
+                <div class="line-under-title"></div>
+
+                <div class="iban-text">
+                    <div class="text-container">
+                        <div class="text">
+                            <h6>Introduction</h6>
+                            <p>The Iban people are the largest indigenous group in Sarawak, known for their deep
+                                connection
+                                to
+                                nature, strong community spirit, and rich heritage. Traditionally, they lived in
+                                longhouses
+                                and
+                                were skilled in agriculture, fishing, and hunting.
+                            </p>
+                        </div>
+
+                        <div class="text">
+                            <h6>Festivals & Traditions</h6>
+                            <p>The Iban celebrate Gawai Dayak, a harvest festival marking the end of the rice-growing
+                                season,
+                                with traditional music, dance, and feasts. They are also known for their intricate
+                                tattoos,
+                                which symbolize bravery and life achievements, and the practice of ngajat, a traditional
+                                warrior
+                                dance performed during celebrations.</p>
+                        </div>
+                    </div>
+
+                    <div class="iban-image">
+                        <img src="img/abtswkiban.jpg">
+                    </div>
+                </div>
 
 
 
@@ -248,7 +343,11 @@
 
 
 
-    </div>
+
+
+
+
+            </div>
 
 
 
