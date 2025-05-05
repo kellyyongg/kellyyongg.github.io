@@ -318,6 +318,8 @@
     text-align: center;
     width: 100%;
     position: relative;
+    overflow-x: hidden;
+
 }
 
 .about {
@@ -368,6 +370,7 @@
     display: flex;
     align-items: center;
     gap: 120px;
+    overflow-x: hidden;
 
 }
 
