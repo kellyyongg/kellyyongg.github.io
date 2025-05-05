@@ -69,6 +69,51 @@
         }
 
 
+        .geolanddiversity h3 {
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .geolanddiversity .line-under-title {
+            background-color: #1e1e1e;
+            margin: 20px auto 20px;
+        }
+
+        .geolanddiversity p {
+            text-align: center;
+            padding: 20px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .population {
+            background-image: url(img/abtswkpopulationbg.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 500px;
+        }
+
+        .population h3 {
+            text-align: center;
+            padding-top: 50px;
+            color: #F5F5DC;
+        }
+
+        .population .line-under-title {
+            background-color: #F5F5DC;
+            margin: 20px auto 20px;
+        }
+
+        .population-image {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            padding-bottom: 50px;
+        }
+
 
         @media(max-width:1090px) {
             .aboutswk {
@@ -85,6 +130,13 @@
                 align-items: center;
                 text-align: center;
             }
+
+            .population-image img {
+                gap: 10px;
+                width: 30%;
+            }
+
+
         }
     </style>
 </head>
@@ -166,11 +218,38 @@
 
             </div>
 
+            <div class="geolanddiversity">
+                <h3>Geography & Land Diversity</h3>
+                <div class="line-under-title"></div>
+                <p>Sarawak’s diverse landscape is a blend of towering mountains, vast rainforests, and winding rivers.
+                    Home to natural wonders like Mulu Caves, Niah Caves, the Borneo Highlands, and the mighty Rajang
+                    River, it offers breath-taking scenery and rich biodiversity, making it a paradise for explorers and
+                    nature lovers.</p>
 
-
+                <div class="geolanddiversity-image"></div>
+            </div>
 
         </div>
     </div>
+
+    <div class="population">
+        <h3>Population Size %</h3>
+        <div class="line-under-title"></div>
+
+        <div class="population-image">
+            <img src="img/abtswkchart.png">
+            <img src="img/abtswkchartdata.jpg">
+        </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+
 
 
 
