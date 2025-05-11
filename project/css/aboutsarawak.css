@@ -73,6 +73,19 @@
     margin: 0 auto;
 }
 
+.geolanddiversity-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.geolanddiversity-image .box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
 .population {
     background-image: url(../img/abtswkpopulationbg.jpg);
     background-position: center center;
