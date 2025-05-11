@@ -55,10 +55,14 @@
     margin-bottom: 16px;
 }
 
+.geolanddiversity {
+    background-color: #F5F5DC;
+
+}
 
 .geolanddiversity h3 {
     text-align: center;
-    padding-top: 50px;
+
 }
 
 .geolanddiversity .line-under-title {
@@ -117,6 +121,11 @@ img {
     align-items: center;
     gap: 10px;
     padding-bottom: 50px;
+}
+
+.population-image img {
+    gap: 10px;
+    width: 30%;
 }
 
 .iban h3 {
@@ -243,7 +252,7 @@ img {
 
 
 
-@media(max-width:1090px) {
+@media(max-width:1000px) {
     .aboutswk {
         flex-direction: column;
         align-items: center;
@@ -259,27 +268,6 @@ img {
         text-align: center;
     }
 
-    .geolanddiversity-image {
-        display: block;
-        /* Stack the images */
-    }
-
-    .geolanddiversity-image .box {
-        display: block;
-        /* Show only one image at a time */
-        width: 100%;
-    }
-
-    .geolanddiversity-image .box img {
-        display: none;
-        /* Hide all images initially */
-        width: 100%;
-    }
-
-    .geolanddiversity-image .box img.active {
-        display: block;
-        /* Show only the active image */
-    }
 
     .slider-prev,
     .slider-next {
@@ -305,7 +293,7 @@ img {
 
     .population-image img {
         gap: 10px;
-        width: 30%;
+        width: 40%;
     }
 
     .iban h3 {
@@ -338,4 +326,15 @@ img {
         text-align: center;
     }
 
+    .containers {
+        flex-direction: column;
+    }
+
+    .container1 {
+        width: 70%;
+    }
+
+    .container2 {
+        width: 70%;
+    }
 }

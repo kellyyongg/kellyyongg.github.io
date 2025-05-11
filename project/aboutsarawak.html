@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/aboutsarawak.css">
     <link rel="stylesheet" href="lightbox/css/lightbox.css">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" rel="stylesheet" />
+
     <script src="lightbox/js/lightbox.js"></script>
     <script src="https://kit.fontawesome.com/0b48aa0eff.js" crossorigin="anonymous"></script>
 
@@ -346,44 +349,33 @@
         });
     </script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
     <script>
         $(document).ready(function () {
-            // Initialize Lightbox
-            new Lightbox();
-
-            // Check if the screen size is 1000px or less
-            function checkLayout() {
-                if ($(window).width() <= 1000) {
-                    // For smaller screens (<=1000px), show only one image at a time in slider style
-                    $(".geolanddiversity-image").addClass("slider-layout");
-                    $(".slider-image").not(":first").hide();  // Hide all images except the first
-                } else {
-                    // For larger screens, reset to show all images
-                    $(".geolanddiversity-image").removeClass("slider-layout");
-                    $(".slider-image").show();  // Show all images
-                }
-            }
-
-            // Run the function on page load
-            checkLayout();
-
-            // Run the function on window resize to update layout
-            $(window).resize(function () {
-                checkLayout();
+            $('.slider').slick({
+                dots: true,
+                arrows: true,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1000,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
-
-            // Optional: If you want a basic slider functionality (e.g., auto-switch images)
-            var currentIndex = 0;
-            setInterval(function () {
-                if ($(window).width() <= 1000) {
-                    var images = $(".slider-image");
-                    images.eq(currentIndex).fadeOut(); // Hide current image
-                    currentIndex = (currentIndex + 1) % images.length; // Go to next image
-                    images.eq(currentIndex).fadeIn(); // Show next image
-                }
-            }, 3000); // Change image every 3 seconds
         });
     </script>
+
+
 
 
 </body>
