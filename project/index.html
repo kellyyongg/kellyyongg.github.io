@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/0b48aa0eff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
 </head>
 
@@ -79,6 +80,7 @@
                 shallot oil, while Sarawak Laksa offers a rich, spicy coconut broth. Lei Cha is a healthy Hakka dish
                 with herbal tea soup, and Mee Sua symbolizes longevity in a fragrant broth.</p>
         </div>
+
         <div class="dish">
             <div class="dish1">
                 <img src="img/kolomee circle.png" alt="Kolo Mee">
@@ -190,35 +192,38 @@
             } else {
                 toggleButton.innerHTML = "&#9776;" // ☰ (hamburger)
             }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $('.dish').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            speed: 300,
 
-            $('.center').slick({
-                centerMode: true,
-                centerPadding: '60px',
-                slidesToShow: 3,
-                responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '40px',
-                            slidesToShow: 3
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '40px',
-                            slidesToShow: 1
-                        }
+            responsive: [
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        arrows: true,
+                        centerMode: false,  /* Disable centering */
+                        slidesToShow: 2,
+                        speed: 300
                     }
-                ]
-            });
-
-
-
+                },
+                {
+                    breakpoint: 720,
+                    settings: {
+                        arrows: true,
+                        centerMode: false,  /* Disable centering */
+                        slidesToShow: 1,
+                        speed: 300
+                    }
+                }
+            ]
+        });
     </script>
 
 </body>

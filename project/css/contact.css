@@ -102,6 +102,25 @@
     color: rgba(30, 30, 30, 0.6);
 }
 
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 250px;
+}
+
+.form-group label,
+.form-group input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
 label {
     min-height: 35px;
 }
@@ -121,8 +140,8 @@ label {
 
 .rating {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: row-reverse;
+    width: 150px;
     border: none;
 }
 
@@ -200,5 +219,27 @@ label {
 
     .button {
         justify-content: center;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .form-group label,
+    .form-group input {
+        text-align: center;
+    }
+
+    .form-group label .rating {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
     }
 }

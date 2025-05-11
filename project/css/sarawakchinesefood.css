@@ -122,6 +122,10 @@
 
 }
 
+.introduction .title {
+    justify-content: center;
+}
+
 .introduction h3 {
     color: #EBC603;
 }

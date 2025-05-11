@@ -66,13 +66,13 @@
 }
 
 .intro-dish {
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
+    flex-wrap: wrap;*/
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
     background-color: #F5F5DC;
-    flex-direction: column;
+    /*flex-direction: column;*/
 }
 
 .intro-dish .text {
@@ -102,12 +102,12 @@
 }
 
 .intro-dish .dish {
-    display: flex;
+    /*display: flex;
     justify-content: center;
     flex: 2;
     flex-wrap: wrap;
     gap: 30px;
-    margin-top: 60px;
+    margin-top: 60px;*/
 }
 
 .intro-dish .dish .dish1,
@@ -118,8 +118,8 @@
     background-color: #1E1E1E;
     border-radius: 25px;
     padding: 80px 20px 30px;
-    width: 180px;
-    margin: 10px;
+
+    margin: 120px 10px 50px 10px;
     padding-top: 60px;
     position: relative;
     z-index: 1;
@@ -183,10 +183,52 @@
     margin-top: 50px;
 }
 
+.slick-center {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.slick-slide {
+    transition: transform 0.3s ease;
+}
+
+.slick-next {
+    right: 15px !important;
+}
+
+.slick-prev {
+    left: 15px !important;
+    z-index: 1000;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #EBC603 !important;
+}
+
 @media(max-width:1000px) {
     .banner-text {
         padding: 0 30px;
     }
+
+    .slick-center {
+        transform: scale(1);
+        /* No zoom effect */
+    }
+
+    .slick-prev,
+    .slick-next {
+        display: block !important;
+    }
+
+    .slick-next {
+        right: 10px !important;
+    }
+
+    .slick-prev {
+        left: 10px !important;
+    }
+
 }
 
 @media (max-width: 768px) {
