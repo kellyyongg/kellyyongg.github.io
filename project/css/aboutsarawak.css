@@ -87,6 +87,10 @@
     margin-bottom: 10px;
 }
 
+img {
+    width: 90%;
+}
+
 .population {
     background-image: url(../img/abtswkpopulationbg.jpg);
     background-position: center center;
@@ -253,6 +257,50 @@
     .aboutswk-text {
         align-items: center;
         text-align: center;
+    }
+
+    .geolanddiversity-image {
+        display: block;
+        /* Stack the images */
+    }
+
+    .geolanddiversity-image .box {
+        display: block;
+        /* Show only one image at a time */
+        width: 100%;
+    }
+
+    .geolanddiversity-image .box img {
+        display: none;
+        /* Hide all images initially */
+        width: 100%;
+    }
+
+    .geolanddiversity-image .box img.active {
+        display: block;
+        /* Show only the active image */
+    }
+
+    .slider-prev,
+    .slider-next {
+        display: block;
+        /* Show navigation buttons */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .slider-prev {
+        left: 10px;
+    }
+
+    .slider-next {
+        right: 10px;
     }
 
     .population-image img {
