@@ -81,16 +81,12 @@
 .yourdetails form {
     padding-top: 30px;
     padding-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
+
 }
 
 .yourdetails form div {
     display: flex;
     flex-direction: column;
-    width: 35%;
 }
 
 .yourdetails form input {
@@ -98,7 +94,6 @@
     width: 100%;
     background-color: #D9D9D9;
     border: none;
-    color: #1e1e1e;
     color: rgba(30, 30, 30, 0.6);
 }
 
@@ -119,6 +114,7 @@
     display: block;
     width: 100%;
     text-align: left;
+    max-width: 300px;
 }
 
 label {
@@ -132,6 +128,7 @@ label {
     border: none;
     color: #1e1e1e;
     color: rgba(30, 30, 30, 0.6);
+    max-width: 300px;
 }
 
 
@@ -208,6 +205,20 @@ label {
         justify-content: center;
     }
 
+    .yourdetails {
+        width: 100%;
+    }
+
+
+    .getintouch {
+        width: 100%;
+    }
+
+    .yourdetails form {
+        width: 100%;
+        align-items: center;
+    }
+
     .rating {
         justify-content: center;
     }
@@ -227,8 +238,9 @@ label {
     }
 
     .form-group {
-        width: 100%;
-        max-width: 400px;
+        justify-content: center;
+        align-items: center;
+
     }
 
     .form-group label,
@@ -240,6 +252,10 @@ label {
         text-align: center;
         justify-content: center;
         align-items: center;
+    }
 
+    .button {
+        display: flex;
+        justify-content: center;
     }
 }
