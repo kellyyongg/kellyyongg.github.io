@@ -115,19 +115,28 @@
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 400px;
-
+    height: 800px;
+    position: relative;
 }
 
 .introduction .title {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .introduction h3 {
     color: #EBC603;
+    margin-bottom: 10px;
 }
 
 .introduction .line-under-title {
@@ -136,12 +145,22 @@
     margin-bottom: 50px;
 }
 
-.introduction p {
-    margin-top: 20px;
+.intro-text p {
     color: #F5F5DC;
-    padding-left: 70px;
-    padding-right: 70px;
+    margin-bottom: 30px;
+
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     max-width: 1200px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+
 
 }
 
@@ -307,4 +326,7 @@
         align-items: center;
     }
 
+    .intro-text p {
+        max-width: 100%;
+    }
 }
