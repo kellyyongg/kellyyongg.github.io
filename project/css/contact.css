@@ -188,6 +188,12 @@ label {
     justify-content: flex-start;
 }
 
+.yourdetails form input,
+.yourdetails form textarea {
+    font-family: Arial, sans-serif;
+    /* or any other consistent font */
+}
+
 
 
 @media(max-width:1000px) {
