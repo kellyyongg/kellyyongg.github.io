@@ -170,7 +170,7 @@ img {
 }
 
 .iban-image {
-    width: 40%;
+    width: 100%;
 }
 
 
@@ -337,7 +337,7 @@ img {
     }
 
     .iban-image {
-        width: 50%;
+        width: 100%;
     }
 
     .chinese-text {
