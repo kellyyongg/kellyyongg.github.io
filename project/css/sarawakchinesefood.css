@@ -48,7 +48,7 @@
 }
 
 .banner-text {
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -70,7 +70,7 @@
 }
 
 .how-text {
-    width: 30%;
+    width: 100%;
 }
 
 .laksa,
@@ -112,15 +112,13 @@
 .introduction {
     background-image: url("../img/introductionkolomee.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 800px;
     position: relative;
+    min-height: 800px;
 }
 
 .introduction .title {
@@ -148,6 +146,8 @@
 .intro-text p {
     color: #F5F5DC;
     margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
 
 }
 
@@ -217,7 +217,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 30%;
+    max-width: 100%;
 
 }
 
@@ -260,6 +260,7 @@
 
     .banner p {
         text-align: center;
+
     }
 
     .banner-contents-first,
@@ -308,8 +309,10 @@
     }
 
     .text {
-        max-width: 50%;
+        max-width: 100%;
         align-items: center;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .text h4,
@@ -326,7 +329,17 @@
         align-items: center;
     }
 
-    .intro-text p {
-        max-width: 100%;
+    .introduction .title,
+    .intro-text {
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+
+    .intro-text {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }

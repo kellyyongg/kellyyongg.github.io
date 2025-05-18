@@ -39,7 +39,7 @@
 
 .introduction-text p {
     padding-top: 20px;
-    max-width: 350px;
+    max-width: 100%;
 }
 
 .introduction-text .line-under-title {
@@ -79,9 +79,13 @@
     margin-bottom: -120px;
 }
 
+.history-text {
+    width: 100%;
+}
+
 .history-text p {
     padding-top: 50px;
-    max-width: 1050px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -176,7 +180,7 @@
 }
 
 .kolomeesls-text {
-    max-width: 40%;
+    max-width: 100%;
     margin-top: 30px;
 }
 
@@ -226,7 +230,6 @@
 .profile-photo {
     width: 60px;
     height: 60px;
-    border-radius: 50%;
     margin: 0 auto 15px;
     font-weight: bold;
     font-size: 22px;
@@ -339,7 +342,7 @@
 
 
     .introduction-text p {
-        max-width: 80%;
+        max-width: 100%;
         margin: 0 auto;
         text-align: center;
     }
@@ -373,6 +376,7 @@
 
     .history-text {
         order: 2;
+        max-width: 100%;
     }
 
     .history-text p {
@@ -388,7 +392,7 @@
     }
 
     .aboutsls-text {
-        max-width: 70%;
+        max-width: 100%;
         margin: 0 auto;
         text-align: center;
     }
@@ -402,7 +406,7 @@
     }
 
     .kolomeesls-text {
-        max-width: 70%;
+        max-width: 100%;
         margin: 0 auto;
         text-align: center;
         order: 2;
@@ -417,7 +421,7 @@
     }
 
     .banner-text {
-        max-width: 80%;
+        max-width: 100%;
         margin: 0 auto;
         text-align: center;
     }

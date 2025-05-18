@@ -32,9 +32,13 @@
     margin-right: 20px;
 }
 
+.introduction-text {
+    width: 100%;
+}
+
 .introduction-text p {
     padding-top: 20px;
-    max-width: 350px;
+    width: 100%;
 }
 
 .introduction-text .line-under-title {
@@ -46,7 +50,6 @@
 .history {
     display: flex;
     flex-direction: column;
-    padding: 0 100px;
     margin-top: 100px;
 }
 
@@ -69,7 +72,7 @@
 
 .history-text p {
     padding-top: 50px;
-    max-width: 1050px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -444,8 +447,7 @@
 
 
     .leichakwong-text {
-        max-width: 70%;
-        margin: 0 auto;
+        max-width: 100%;
         text-align: center;
         order: 2;
     }
@@ -492,8 +494,7 @@
     }
 
     .bigmouthbanner-text {
-        max-width: 80%;
-        margin: 0 auto;
+        max-width: 100%;
         text-align: center;
     }
 

@@ -62,7 +62,6 @@
 .history {
     display: flex;
     flex-direction: row;
-    padding: 0 100px;
     gap: 100px;
 
 }
@@ -373,6 +372,7 @@
     align-items: center;
     gap: 120px;
     overflow-x: hidden;
+    justify-content: center;
 
 }
 
@@ -384,11 +384,11 @@
 }
 
 .section1-text {
-    width: 50%;
+    width: 100%;
 }
 
 .section2-text {
-    width: 30%;
+    width: 100%;
 }
 
 .otherdish {
@@ -423,7 +423,7 @@
     }
 
     .intro-text {
-        max-width: 80%;
+        max-width: 100%;
         margin: 0 auto;
         text-align: center;
         order: 2;
@@ -519,7 +519,7 @@
     }
 
     .aboutmee-text {
-        max-width: 70%;
+        max-width: 100%;
         margin: 0 auto;
         text-align: center;
     }
@@ -533,7 +533,7 @@
     }
 
     .meesuamee-text {
-        max-width: 70%;
+        max-width: 100%;
         margin: 0 auto;
         text-align: center;
         order: 2;
@@ -552,8 +552,8 @@
     }
 
     .aboutchoon-text {
-        max-width: 70%;
-        margin: 0 auto;
+        max-width: 100%;
+
         text-align: center;
         order: 2;
     }

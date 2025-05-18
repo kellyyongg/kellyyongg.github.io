@@ -32,6 +32,11 @@
     margin-right: 20px;
 }
 
+.intro-text {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 .intro-text p {
     padding-top: 20px;
 }
@@ -59,7 +64,6 @@
 .history {
     display: flex;
     flex-direction: row;
-    padding: 0 100px;
     gap: 100px;
 
 }
@@ -74,11 +78,15 @@
 .history-text {
     display: flex;
     flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 
 .history-text p {
     padding-top: 50px;
-    max-width: 1050px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -307,11 +315,11 @@
 .about-choon-text {
     margin-top: 30px;
     max-width: 40%;
-    margin-left: 60px;
 }
 
 .about-choon-text p {
     padding-top: 20px;
+
 }
 
 .choonswklaksa {
@@ -434,10 +442,12 @@
 
     .history-text {
         order: 3;
+        max-width: 100%;
     }
 
     .history-text p {
         padding-top: 50px;
+        width: 100%;
     }
 
     .aboutpoh {
@@ -450,7 +460,7 @@
     }
 
     .aboutpoh-text {
-        max-width: 70%;
+        max-width: 100%;
         margin: 0 auto;
         text-align: center;
     }
@@ -478,8 +488,7 @@
     }
 
     .about-choon-text {
-        max-width: 80%;
-        margin: 0 auto;
+        max-width: 100%;
         text-align: center;
     }
 
@@ -503,7 +512,7 @@
     }
 
     .choonswklaksa-text {
-        max-width: 80%;
+        max-width: 100%;
         margin: 0 auto;
         text-align: center;
         order: 2;

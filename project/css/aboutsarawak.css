@@ -72,9 +72,9 @@
 
 .geolanddiversity p {
     text-align: center;
-    padding: 20px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .geolanddiversity-image {
@@ -157,7 +157,7 @@ img {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    width: 50%;
+    width: 100%;
 }
 
 .iban-text .text {
