@@ -214,23 +214,18 @@ img {
     align-items: center;
 }
 
-.containers .container1,
-.containers .container2 {
+.containers .container1 {
     border: 1px solid #000;
-    padding: 16px;
+    padding: 10px;
     margin: 10px;
     border-radius: 8px;
 }
 
 .container1 {
-    width: 40%;
+    width: 30.33%;
 }
 
-.container2 {
-    width: 50%;
-    justify-items: center;
-    text-align: center;
-}
+
 
 .text {
     text-align: center;
@@ -291,6 +286,31 @@ img {
         right: 10px;
     }
 
+    .geolanddiversity-image {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+    .geolanddiversity-image div {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .geolanddiversity-image .box {
+        display: block;
+    }
+
+    .geolanddiversity-image .box a {
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+
     .population-image img {
         gap: 10px;
         width: 40%;
@@ -304,7 +324,6 @@ img {
     .iban .line-under-title {
         margin: 20px auto;
         margin-bottom: 50px;
-
     }
 
     .iban-text {
